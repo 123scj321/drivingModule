@@ -1,0 +1,37 @@
+<!--pages/map/my/my.wxml-->
+ <template name="myContainer" class='driverContainer'> 
+    
+  <cover-view class='myContainer' style='left:{{scrollLeft}}rpx' >
+    <cover-view class='myLeft'>
+      <cover-view class='avatarAndLogin'>
+        <cover-image  src="{{avatar}}"></cover-image>
+        <cover-view>{{username}}</cover-view>
+      </cover-view>
+      <cover-view class='myList'>
+        <cover-view class='myItem ' data-skip="../../order/allOrder/allOrder" bindtap='intoPageHandler'>
+          <cover-view class='iconfont icon-wenben'></cover-view>
+          <cover-view>全部订单</cover-view>
+        </cover-view>
+        <cover-view class='myItem' data-skip="../orderGoing/orderGoing" bindtap='intoPageHandler'>
+          <cover-view class='iconfont icon-biao'></cover-view>
+          <cover-view>进行中</cover-view>
+          <cover-view class='showCount'>1</cover-view>
+        </cover-view>
+        <cover-view class='myItem' data-skip="../../coupon/coupon" bindtap='intoPageHandler'>
+          <cover-view class='iconfont icon-youhuiquan'></cover-view>
+          <cover-view>优惠券</cover-view>
+        </cover-view>
+        <cover-view class='myItem' bindtap='callPhoneHandler'>
+          <cover-view class='iconfont icon-weibiaoti'></cover-view>
+          <cover-view>联系客服</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class='loginOut'>
+        <button class='loginOutButton' bindtap='loginHandler'>{{buttonText}}</button>
+      </cover-view>
+    </cover-view>
+    <cover-view class='myRight' bindtap='scrollLeftHandler'>
+      <cover-view class='iconfont {{zuoyou}}'></cover-view>
+    </cover-view>
+  </cover-view>
+  </template>

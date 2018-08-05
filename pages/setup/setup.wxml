@@ -1,0 +1,64 @@
+<!--pages/setup/setup.wxml-->
+<!--setup container  -->
+<view class='setupContainer'>
+  <!--listenWayAndOrderHobbyAndOrderDistance  -->
+  <view class='listenWayAndOrderHobbyAndOrderDistance'>
+    <view class='listenWay'>
+      <view class='title'>
+        <icon></icon>
+        <text>听单方式</text>
+        <icon></icon>
+      </view>
+      <view class='listenWayButton'>
+        <view class='listenWayButtonContainer'>
+          <view wx:for="{{listenWay}}" wx:index="{{listenWay}}" wx:key="index" wx:item="item" class='{{index===listenWayDefault?"acitve":""}}' bindtap='checklistenWayHnadler' data-check="{{index}}"> 
+            {{item}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='orderHobby'>
+      <view class='title'>
+        <icon></icon>
+        <text>订单偏好</text>
+        <icon></icon>
+      </view>
+      <view class='orderHobbyButton'>
+        <view class='orderHobbyButtonContainer'>
+          <view wx:for="{{orderHobby}}" wx:key="{{orderHobby}}" wx:index="index" class='{{orderHobbyDefault===index?"acitve":""}}' bindtap='checkOrderHobbyHnadler' data-check="{{index}}">
+            {{item}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='orderDistance'>
+      <view class='title'>
+        <icon></icon>
+        <text>实时订单范围（公里）</text>
+        <icon></icon>
+      </view>
+      <view class='progressAndStatus'>
+        <view class='progress'>
+          <view class='progressStyle'>
+            <view class='progressItem {{index<=progressDefault?"active":""}}'  wx:for="{{progress}}" wx:key="index" wx:index="{{progress}}" wx:item="item">
+              <text></text>
+              <icon bindtap='checkProgressHandler' data-check="{{index}}"></icon>
+            </view>
+          </view>
+          <view class='progressText'>
+            <text wx:for="{{mileageList}}" wx:key="index" wx:index="{{mileageList}}" wx:item="item">{{item}}</text>
+          </view>
+        </view>
+        <view class='status'>
+          <view>最优</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--finishContainer  -->
+    <view class='orderAndNextButton'>
+    <view class='getOrder' bindtap='intoPageHandler' data-skip="../index/index">
+        <text>完成</text>
+    </view>
+  </view> 
+</view>

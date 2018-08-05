@@ -1,0 +1,134 @@
+<!--pages/map/driverServer/driverServer.wxml-->
+<!--dirver container  -->
+<view class='driverServerContainer'>
+ <view class='myContainer' hidden='{{myShow}}'>
+  <view class='myContainer'>
+    <view class='myLeft'>
+      <view class='avatarAndLogin'>
+        <image  src="{{avatar}}"></image>
+        <view>
+          <text>{{username}}</text>
+          <text>{{phone}}</text>
+        </view>
+      </view>
+      <view class='myList'>
+        <view class='myItem ' data-skip="../../userOrder/allOrder/allOrder" bindtap='intoPageHandler'>
+          <view class='orderImage'>
+            <image src="../../../images/user/icon-38.png"></image>
+          </view>
+          <view>全部订单</view>
+        </view>
+        <view class='myItem' data-skip="../orderGoing/orderGoing" bindtap='orderGoingHandler'>
+           <view class='goingImage'>
+            <image src="../../../images/user/icon-37.png"></image>
+          </view>
+          <view>进行中</view>
+          <view class='showCount' style='display:{{orderGoing?"inline-block":"none"}}'>1</view>
+        </view>
+        <view class='myItem' data-skip="../../driver/wallet/wallet" bindtap='intoPageHandler'>
+          <view class='moneyImage'>
+            <image src="../../../images/user/icon-40.png"></image>
+          </view>
+          <view>钱包</view>
+        </view>
+        <view class='myItem' data-skip="../../driver/driverAgreement/driverAgreement" bindtap='intoPageHandler'>
+          <view class='joinImage'>
+            <image src="../../../images/user/icon-35.png"></image>
+          </view>
+          <view>司机招募</view>
+        </view>
+        <view class='myItem' bindtap='relstiveServerHandler'>
+          <view class='relativeImage'>
+            <image src="../../../images/user/icon-36.png"></image>
+          </view>
+          <view>联系客服</view>
+        </view>
+      </view>
+      <view class='loginOut'>
+        <button class='loginOutButton' open-type="getUserInfo" bindgetuserinfo="loginHandler">{{buttonText}}</button>
+      </view>
+    </view>
+  </view>
+ </view>
+ <view class='driverContainer'> 
+  <map id="map" longitude="{{startAddress.location.lng}}" latitude="{{startAddress.location.lat}}" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 750rpx; height: 700rpx;position:absolute">
+  </map>
+  <view class="driverServer" style='display:{{homeHandlerShow?"block":"none"}}'>
+    <view class='driverTitle' bindtap='selectTimeShowTimeHandler'>
+      <image src="../../../images/user/icon-25.png"></image> 
+      <text>预约时间</text>
+    </view>
+    <view class='startAddress'>
+      <icon></icon>
+      <input placeholder='所在位置（自动生成）'  value="{{startAddress.title}}" data-skip="../searchAddress/searchAddress?addressType=startAddress" bindfocus='intoPageHandler'></input>
+    </view>
+    <view class='goAddress'>
+      <view class='iconAndGoAddress'>
+        <icon></icon>
+        <input placeholder='请输入目的地' data-skip="../searchAddress/searchAddress?addressType=endAddress" bindfocus='intoPageHandler' value="{{endAddress.title}}"></input>
+      </view>
+      <view class='serverImage'>
+        <image src='../../../images/user/icon-19.png'></image>
+      </view>
+    </view>
+    <view class='helpAndMoreDriver'>
+      <view class='help' data-skip="../../userOrder/helpFriendDownloadOrder/helpFriendDownloadOrder" bindtap='intoPageHandler'>
+        <image src="../../../images/user/icon-24.png"></image>
+        <text>帮朋友叫车</text>
+      </view>
+      <view class='moreDriver' bindtap='getMoreDriverHandler'>
+        <view class='more'>
+          <image src="../../../images/user/icon-24.png"></image>
+          <text>需要多位司机</text></view>
+        </view>
+    </view>
+    <view class='scjSubmitButton'>
+      <button class='scjSubmit' bindtap='callServerHandler'>一键呼叫</button>
+    </view>
+  </view>
+  <!-- 选择司机数量 -->
+  <view class='privenceRelative' style='display:{{!orderOrMore?"block":"none"}}'>
+     <view class='title'>
+      <view bindtap='getMoreDriverHandler'>取消</view>
+      <view>请选择司机数量</view>
+      <view bindtap='getDriverCountHandler'>确定</view>
+     </view>
+     <view class='context'>
+      <picker-view indicator-class="driverChecked" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+            <picker-view-column>
+            <view wx:for="{{drivers}}" wx:key='this' class='droverCountText'>
+              {{item.title}}
+            </view>
+            </picker-view-column>
+        </picker-view>
+     </view>
+  </view>
+  <!-- 选择预约时间 -->
+  <view class='appointmentTimeContainer' style='display:{{showTimeContainer?"block":"none"}}'>
+     <view class='title'>
+      <view bindtap='getTimeHandlerCancle'>取消</view>
+      <view>请选择预约时间</view>
+      <view bindtap='getTimeHandlerOk'>确定</view>
+     </view>
+     <view class='context'>
+      <picker-view indicator-class="driverChecked" style="width: 100%; height: 400rpx;" bindchange="bindTimeChange">
+            <picker-view-column >
+            <view wx:for="{{date}}" wx:key='this' class='droverCountText'>
+              {{item}}
+            </view>
+            </picker-view-column>
+            <picker-view-column >
+            <view wx:for="{{hours}}" wx:key='this' class='droverCountText'>
+              {{item}}
+            </view>
+            </picker-view-column>
+            <picker-view-column >
+            <view wx:for="{{minute}}" wx:key='this' class='droverCountText'>
+              {{item}}分
+            </view>
+            </picker-view-column>
+        </picker-view>
+     </view>
+  </view>
+</view>
+</view>

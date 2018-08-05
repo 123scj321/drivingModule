@@ -1,0 +1,293 @@
+/**index.wxss**/
+page{
+  background:#f2f2f2;
+  font-size:"黑体";
+}
+/*  */
+.personalCenterContainer{
+  display: inline-block;
+  vertical-align: top;
+  width:750rpx;
+}
+.avatarAndWalletAndOrder{
+  width:100%;
+  height: 425rpx;
+  background: #fff;
+}
+.avatar{
+  width:100%;
+  height: 285rpx;
+  background: #4d5562;
+  text-align: center;
+  border-radius:0 0 200% 200%/60%;
+  color:#fff;
+  font-size:30rpx;
+}
+.avatar image{
+  width:140rpx;
+  height: 140rpx;
+  margin-top:40rpx;
+  border-radius: 50%;
+}
+.walletAndOrder{
+  width:100%;
+  display: flex;
+  font-size:28rpx;
+  justify-content: space-around;
+  margin-top:30rpx;
+}
+.walletAndOrder .wallet,.walletAndOrder .myorder{
+  width:50%;
+  text-align: center;
+}
+.wallet text,.order text{
+  font-size:40rpx;
+}
+.blue{
+  color:#1b82ec;
+}
+.evaluateTaskKnowledgeActivity{
+  margin-top:25rpx;
+}
+.listItem{
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.title{
+  font-size:30rpx;
+  color:#333;
+  margin-left:25rpx;
+}
+.title image{
+  width:28rpx;
+  height: 28rpx;
+  margin-right: 30rpx;
+}
+.text{
+  font-size:26rpx;
+  color:#aaaaaa;
+  margin-right: 25rpx;
+}
+.text image{
+  width:15rpx;
+  height: 25rpx;
+  margin-left: 25rpx;
+  margin-top:10rpx;
+}
+.informationHandlerServer{
+  margin-top:25rpx;
+}
+.borderBottom{
+  border-bottom: 2rpx solid #d2d2d2;
+}
+.borderTop{border-bottom:2rpx solid #d2d2d2;}
+/* homeContainer */
+.homeContainer{
+  display: inline-block;
+  vertical-align: top;
+  min-height: 1234rpx;
+  width:750rpx;
+  position: relative;
+}
+.homeDriverAndOrderInformationAndPrompt{
+  width:100%;
+  background: #3e4146;
+  color:#fff;
+  height: 405rpx;
+}
+.driver{
+  width:700rpx;
+  height:50rpx;
+  display: flex;
+  justify-content: space-between;
+  margin:0rpx auto;
+}
+.homeavatar{
+  background: none;
+  width:44rpx;
+  height: 44rpx;
+  padding:0rpx;
+  border:none;
+  margin:15rpx;
+}
+.homeavatar image{
+  border-radius: 50%;
+  width:44rpx;
+  height: 44rpx;
+  display: block;
+}
+.address image{
+  display: block;
+  width:30rpx;
+  height:30rpx;
+  margin-top:8rpx; 
+  margin-right: 8rpx;
+}
+.address text{
+  display: inline-block;
+  height:45rpx;
+  max-width: 200rpx;
+  overflow: hidden;
+  /* margin-top:-8rpx; */
+}
+.address{
+  padding:5rpx 20rpx;
+  height:45rpx;
+  line-height: 45rpx;
+  background: #50545a;
+  border-radius: 90rpx;
+  font-size:20rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top:22rpx;
+}
+.order{
+  display: flex;
+  justify-content: space-around;
+  width:700rpx;
+  margin:60rpx auto;
+  height:80rpx;
+}
+.order .text{
+  font-size:24rpx;
+  color:#aaaaaa;
+  margin-top:50rpx;
+}
+.orderCount,.orderIncome{
+  width:200rpx;
+  text-align: center;
+}
+.orderCount .count,.orderIncome .income{
+  font-size:28rpx;
+}
+.orderCount .count text,.orderIncome .income text{
+  font-size:50rpx;
+}
+.orderTime{
+  width:250rpx;
+  text-align: center;
+  margin-top:-14rpx;
+}
+.orderTime .time{
+  font-size:28rpx;
+}
+.orderTime .time text{
+  font-size:58rpx;
+}
+.prompt{
+  width:700rpx;
+  
+  font-size:22rpx;
+  color:#aaa;
+  text-indent:2em;
+  white-space: pre-wrap;
+  margin:0 auto;
+}
+/*promitAndText  */
+.promitAndText{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  margin:20rpx auto;
+  background: #fff;
+  border-top:2rpx solid #d2d2d2;
+  border-bottom:2rpx solid #d2d2d2;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.promitAndIcon{
+  font-size:30rpx;
+  color:#333;
+}
+.promitAndText image{
+width:34rpx;
+height:38rpx;
+margin-left:25rpx;
+margin-right:25rpx;
+}
+.context{
+  font-size:26rpx;
+  color:#aaa;
+  margin-right: 25rpx;
+}
+.context icon{
+  width:16rpx;
+  height:16rpx;
+  background: #f43530;
+  border-radius: 50%;
+}
+/*rewardAndActivityList  */
+.rewardAndActivityList{
+  background: #fff;
+}
+.rewardAndActivityItem{
+  width:100%;
+  margin:0 auto;
+  height: 170rpx;
+  border-bottom: 2rpx solid #d2d2d2;
+  line-height: 50rpx;
+}
+.rewardAndActivityItem .listTitle{
+  color:#333;
+  font-size:30rpx;
+  margin-left:25rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.rewardAndActivityItem .listTitle text:last-child{
+  margin-left:20rpx;
+  font-size:24rpx;
+  color:#888;
+}
+.rewardAndActivityItem .listContext{
+   margin-left:35rpx; 
+   height: 60rpx;
+   line-height:28rpx;
+  font-size:26rpx;
+  color:#555;
+  white-space: pre-wrap;
+}
+/*homeButtonContainer  */
+.homeButtonContainer{
+  width: 100%;
+  position: fixed;
+  bottom:0rpx;
+  display: flex;
+  z-index: 10000;
+  height: 130rpx;
+  background: #f2f2f2;
+  border-top:2rpx solid #ddd;
+}
+.homeButtonContainer image{
+  width:36rpx;
+  height: 36rpx;
+  margin-top:30rpx;
+  display: block;
+}
+.homeButtonContainer button:first-child{
+width:560rpx;
+height: 90rpx;
+line-height: 90rpx;
+background: linear-gradient(to bottom,#02adfa, #028dc9);
+margin-top:15rpx;
+margin-left:25rpx;
+color:#fff; 
+}
+.homeButtonContainer button:last-child{
+  width:134rpx;
+  height: 90rpx;
+  background: linear-gradient(to bottom,#989897,#898989);
+  line-height: 90rpx;
+  text-align: center;
+  font-size:34rpx;
+  color:#fff;
+  padding: 0rpx;
+  display: flex;
+  justify-content: center;
+  margin-top:15rpx;
+  margin-right:25rpx;
+}

@@ -1,0 +1,93 @@
+/* pages/order/accidentOrder/accidentOrder.wxss */
+page{
+  background: #f2f2f2;
+}
+.orderItem{
+  background: #fff;
+  font-size:26rpx;
+  color:#333333;
+  margin-top:30rpx;
+  height: 280rpx;
+}
+.orderContext{
+  width:100%;
+  padding-left:25rpx;
+  padding-top:20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.address{
+  display: flex;
+  width:100%;
+  margin-top:30rpx;
+}
+.addressProgress{
+  width:33rpx;
+  height:130rpx;
+}
+.addressProgress icon:first-child{
+  width:20rpx;
+  height:20rpx;
+  border-radius: 50%;
+  background: #2e8ef0;
+}
+.addressProgress icon:last-child{
+  width:20rpx;
+  height:20rpx;
+  border-radius: 50%;
+  background: #f0b72e;
+}
+.addressProgress view{
+  height:40rpx;
+  border-left:2rpx dotted #e7e7e7;
+  margin-left:10rpx;
+}
+.addressContext view:last-child{
+  margin-top:40rpx;
+}
+.orderId{
+  color:#888;
+}
+.orderStatus{
+  margin-right: 50rpx;
+  color:#888;
+  font-size:26rpx;
+}
+.yellowText{
+  color:#f0b72e;
+}
+.Dept{
+  padding:5rpx 25rpx;
+  border-radius: 8rpx;
+  border:2rpx solid #f0b72e;
+}
+.checkDetail{
+  width:100%;
+  padding-left:25rpx;
+  font-size:28rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 70rpx;
+  border-top:2rpx solid #d2d2d2;
+}
+.checkImage image{
+  width:15rpx;
+  height: 25rpx;
+  display: block;
+  margin-right:50rpx;
+  margin-top:20rpx;
+}
+.orderStatusHandler{
+  margin-top:40rpx;
+  padding:5rpx 20rpx;
+  border-radius: 5rpx;
+}
+.yellowText{
+  border:2rpx solid #f0b72e;
+  color:#f0b72e;
+}
+.blueText{
+  border:2rpx solid #2e8ef0;
+  color:#2e8ef0;
+}

@@ -1,0 +1,9 @@
+<!--pages/order/orderGoing/orderGoing.wxml-->
+<view class='orderGoingContainer'>
+<map id="map"  scale="15"  bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 750rpx; height: 1070rpx;border:2rpx solid #ddd" longitude="{{longitude}}" latitude="{{latitude}}">
+  </map>
+  <view class='button' bindtap='intoPageHandler' data-skip="../bill/bill">
+    <button>结束进程</button>
+  </view>
+</view>
+

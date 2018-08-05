@@ -1,0 +1,109 @@
+/* pages/map/my/my.wxss */
+/*myLeft  */
+.myLeft{
+  width:620rpx;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+.avatarAndLogin{
+  width:100%;
+  margin-top:110rpx;
+  margin-bottom: 110rpx;
+  display: flex;
+  padding-left:60rpx;
+  font-size: 30rpx;
+  color:#333;
+}
+.avatarAndLogin image{
+  padding: 0rpx;
+  width:180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+.avatarAndLogin view{
+  height: 120rpx;
+  margin-top:30rpx;
+  margin-left:35rpx;
+}
+.avatarAndLogin view text{
+  line-height: 60rpx;
+  font-size:36rpx;
+  color:#333;
+  display: block;
+}
+.avatarAndLogin view text:last-child{
+  font-size:32rpx;
+}
+.myList{
+  width:100%;
+  padding-left:60rpx;
+}
+.myItem{
+  border-bottom: 2rpx solid #d2d2d2;
+  height:120rpx;
+  line-height: 120rpx;
+  font-size: 32rpx;
+  color:#333;
+  display: flex;
+}
+.myItem:last-child{
+  border:none;
+}
+.myItem view{
+  color:#333;
+  font-size:32rpx;
+}
+.myItem view{
+  display: inline-block;
+  margin-left:20rpx;
+}
+.showCount{
+  width:45rpx;
+  height: 45rpx;
+  background: #de2a2a;
+  color:#fff;
+  font-size:24rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45rpx;
+   margin-left: 300rpx; 
+}
+.loginOut{
+  width:100%;
+  position: fixed;
+  bottom:0rpx;
+  height: 120rpx;
+  background: #fff;
+}
+.loginOut button{
+  margin-left:20rpx;
+  width: 570rpx;
+  height: 90rpx;
+  font-size:32rpx;
+  color:#666;
+}
+/* 列表图片 */
+.myItem image{
+  margin-top:44rpx;
+}
+.orderImage image{
+  width:33rpx;
+  height:35rpx;
+}
+.goingImage image{
+  width:37rpx;
+  height: 36rpx;
+}
+.moneyImage image{
+  width:33rpx;
+  height: 39rpx;
+}
+.joinImage image{
+  width:32rpx;
+  height: 39rpx;
+}
+.relativeImage image{
+  width:33rpx;
+  height: 41rpx;
+}

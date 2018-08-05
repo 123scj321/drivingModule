@@ -1,0 +1,44 @@
+<!--pages/user/server/server.wxml-->
+<view class='serverContainer'>
+  <!-- server title -->
+  <view class='serverTitle'>
+    <icon class='rightLine'></icon>
+    <view class='imageAndText'>
+      <image src='../../../images/icon/icon-08.png'></image>
+      <text>常见问题</text>
+    </view>
+    <icon class='leftLine'></icon>
+  </view>
+  <!--question group  -->
+   <view class='questionItem'>
+    <view class='questionTitle'>
+      <icon class='circle'></icon>
+      <text>打车费为什么跟评估的价格有差异</text>
+    </view>
+    <view class='answearText'>
+      打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费。
+    </view>
+  </view>
+  <view class='questionItem'>
+    <view class='questionTitle'>
+      <icon class='circle'></icon>
+      <text>打车费为什么跟评估的价格有差异</text>
+    </view>
+    <view class='answearText'>
+      打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费。
+    </view>
+  </view>
+  <view class='questionItem'>
+    <view class='questionTitle'>
+      <icon class='circle'></icon>
+      <text>打车费为什么跟评估的价格有差异</text>
+    </view>
+    <view class='answearText'>
+      打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费为什么跟评估的价格有差异打车费。
+    </view>
+  </view> 
+  <!--online button  -->
+   <view class='onlineButton'>
+    <button class='onlineServer'>在线客服</button>
+  </view> 
+</view>

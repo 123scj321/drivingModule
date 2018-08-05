@@ -1,0 +1,126 @@
+<!--pages/driver/personalInformation/personalInformation.wxml-->
+<view class='personalInformationContainer'>
+  <view class='registerCity .lineTop'>
+    <view class='title'>注册城市</view>
+     <view class="PCAContainer text" hidden='{{!driver.city_status}}'>
+      <picker bindchange="selectedProvince" value="{{index}}" range="{{arrayProvince}}">
+        <view class="picker">
+          {{province}}
+        </view>
+      </picker>
+      <picker bindchange="selectedCity" value="{{index}}" range="{{arrayCity}}">
+        <view class="picker">
+          {{city}}
+        </view>
+      </picker>
+    </view> 
+    <view class='text' bindtap='selectCityHandler' hidden='{{driver.city_status}}'>
+        {{driver.city===null?"请选择":driver.city}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+  </view>
+  <view class='warning'>信息仅用于审核，加密保护，请放心填写</view>
+  <view class='name borderBottom'>
+    <view class='title'>姓名</view>
+    <view class='text' hidden='{{driver.name_status}}' bindtap='selectNameHandler'> 
+      {{driver.name!==null?driver.name:"请输入"}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text' hidden='{{!driver.name_status}}' >
+      <input class='' placeholder="请输入姓名" value="{{driver.name}}" bindblur='selectedNameHandler'></input>
+    </view>
+  </view>
+  <view class='name borderBottom'>
+    <view class='title'>电话号码</view>
+    <view class='text' hidden='{{driver.phone_status}}' bindtap='selectPhoneHandler'> 
+      {{driver.phone!==null?driver.phone:"请输入"}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text' hidden='{{!driver.phone_status}}' >
+      <input class='' placeholder="请输入电话号码" value="{{driver.phone}}" bindblur='selectedPhoneHandler'></input>
+    </view>
+  </view>
+  <view class='id borderBottom'>
+    <view class='title'>工号</view>
+    <view class='text' hidden='{{driver.id_status}}' bindtap='selectIdHandler'> 
+      {{driver.id!==null?driver.id:"请输入"}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text' hidden='{{!driver.id_status}}'>
+      <input class='' placeholder="请输入工号" bindblur='selectedIdHandler' type="number"></input>
+    </view>
+  </view>
+  <view class='relative borderBottom'>
+    <view class='title'>紧急联系人</view>
+    <view class='text' hidden='{{driver.relative_status}}' bindtap='selectRelativeHandler'> 
+      {{driver.relative!==null?driver.relative:"请输入"}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text' hidden='{{!driver.relative_status}}'>
+      <input class='' placeholder="请输入紧急联系人号码" bindblur='selectedRelativeHandler' type="number"></input>
+    </view>
+  </view>
+  <view class='bank '>
+    <view class='title'>银行卡</view>
+    <view class='text' hidden='{{driver.bank_status}}' bindtap='selectBankHandler'> 
+      {{driver.bank===null?"请输入":driver.bank}}<image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text' hidden='{{!driver.bank_status}}'>
+      <input class='' placeholder="请输入银行卡" bindblur='selectedBankHandler' type="number"></input>
+    </view>
+  </view>
+  <view class='IdCard borderBottom lineTop'>
+    <view class='title'>身份证号</view>
+    <view class='text' hidden='{{driver.idCard_status}}' bindtap='selectIdCardHandler'> 
+      {{driver.idCard!==null?driver.idCard:"请输入18位身份证号"}}<image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text' hidden='{{!driver.idCard_status}}'>
+      <input class='' placeholder="请输入身份证号" bindblur='selectedIdCardHandler'></input>
+    </view>
+  </view>
+  <view class='IdCardPhoto borderBottom'>
+    <view class='title'>身份证照片</view>
+    <view class='text' bindtap='intoPageHandler' data-skip="../addIdCardPhoto/addIdCardPhoto?type=idCardPhoto"> 
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+  </view>
+   <view class='workTime borderBottom'>
+    <view class='title'>驾龄</view>
+    <view class='text' hidden='{{driver.workTime_status}}' bindtap='selectWorktimeHandler'>
+      {{driver.workTime!==-1?driver.workTime:"请输入"}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+    <view class='text workTimeContainer' hidden='{{!driver.workTime_status}}'>
+      <picker bindchange="selectedWorktimeHandler" value="{{index}}" range="{{arrayDriverAge}}" class='driverAge'>
+          <view class="picker">
+            {{driver.workTime===-1?"请选择":driver.workTime}}
+          </view>
+      </picker>
+    </view>
+  </view>
+  <view class='driverPhoto borderBottom'>
+    <view class='title'>驾驶证照片</view>
+    <view class='text' bindtap='intoPageHandler' data-skip="../addIdCardPhoto/addIdCardPhoto?type=driverPhoto"> 
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+  </view>
+  <view class='driverEffectPhoto'>
+    <view class='title'>驾驶证有效期</view>
+    <view class='text driverTime' hidden='{{!driver.driverTime_status}}'>
+      <picker bindchange="selectedDriverTimeHandler" value="{{index}}" range="{{driverEffictTime}}" class='driverAge'>
+            <view class="picker">
+              {{driver.driverTime!==-1?driver.driverTime:"请输入"}}
+            </view>
+      </picker>
+    </view>
+    <view class='text ' hidden='{{driver.driverTime_status}}' bindtap='selectDriverTimeHandler'>
+      {{driver.driverTime!==-1?driver.driverTime:"选填"}}
+      <image src="../../../images/driver/icon-05.png"></image>
+    </view>
+  </view>
+   <view style='height:130rpx'></view> 
+  <view class='button lineTop' >
+    <button bindtap='personalInformationHandler'>完成</button>
+  </view>
+</view>
+

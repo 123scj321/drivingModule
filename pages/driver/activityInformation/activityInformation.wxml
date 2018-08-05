@@ -1,0 +1,10 @@
+<!--pages/driver/activityInformation/activityInformation.wxml-->
+<view class='activityContainer'>
+  <view class='title'>{{activity.title}}</view>
+  <view class='time'>{{activity.time}}</view>
+  <view class='activityList'>
+    <view class='activityItem' wx:for="{{activity.context}}" wx:key="{{activity.context}}" wx:index="index" wx:item="item">
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>

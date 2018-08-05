@@ -1,0 +1,35 @@
+<!--pages/order/helpFriendDownloadOrder/helpFriendDownloadOrder.wxml-->
+<view class='relativeContainer'>
+  <!-- name phone isPaid container-->
+  <view class='nameAndPhoneAndisPaid'>
+    <view class='nameAndPhone'>
+      <input placeholder='请输入乘车人姓名' bindblur='getNameHandler'></input>
+      <input placeholder='请输入乘车人电话号码' bindblur='getPhoneHandler' type='number'></input>
+      <text>*司机会联系乘车人，请提前通知乘车人</text>
+    </view>
+    <view class='isPaid'>
+      <view class='isPaidContainer'>
+        <view>是否开启代付</view>
+        <switch bindchange='isReplacePayHandler'></switch>
+      </view>
+      <text>*开启后，订单结束会通知您来支付此次费用</text>
+    </view>
+  </view>
+  <!--history record detail  container-->
+  <view class='historyRecord'>
+    <view class='historyRecordTitle'>
+      <view>历史记录</view>
+      <view class='delete' bindtap='deleteHistoryHandler'><icon class='iconfont icon-shanchu'></icon></view>
+    </view>
+    <view class='historyRecordList'>
+      <view class='historyRecordItem'  wx:for="{{order}}" wx:key="{{order}}" wx:item="item" wx:index="index">
+        <text>{{item.time}}</text>
+        <text>({{item.user[0].name}}){{item.user[0].phone}}</text>
+      </view>
+    </view>
+  </view>
+  <!--submit button container  -->
+  <view class='submitButton'>
+    <button class='submit' bindtap='submitOrderHandler'>确认</button>
+  </view>
+</view>

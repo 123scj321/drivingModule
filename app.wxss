@@ -1,0 +1,66 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box ;
+}
+/*scjSubmitButton  */
+.scjSubmitButton{
+  width:700rpx;
+  margin:30rpx auto;
+}
+.scjSubmit{
+  background: linear-gradient(to bottom,#02adfa, #028dc9);
+  color:#ffffff;
+  font-size:36rpx;
+  font-family: "微软雅黑";
+}
+.button{
+  width:100%;
+  background: #fff;
+  border-top:2rpx solid #ddd;
+  text-align: center;
+  height: 130rpx;
+  position: fixed;
+  bottom:0rpx;
+}
+.button button{
+  width:700rpx;
+  margin:20rpx auto;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: linear-gradient(to bottom,#02adfa, #028dc9);
+  color:#fff;
+}
+/*引入阿里云图标样式  */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1531730289901'); /* IE9*/
+  src: url('iconfont.eot?t=1531730289901#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('iconfont.ttf?t=1531730289901') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1531730289901#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youhuiquan:before { content: "\e60b"; }
+
+.icon-biao:before { content: "\e63b"; }
+
+.icon-zuoyou1:before { content: "\e502"; }
+
+.icon-wenben:before { content: "\e684"; }
+
+.icon-zuoyou:before { content: "\e6b3"; }
+
+.icon-weibiaoti:before { content: "\e60d"; }

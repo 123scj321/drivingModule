@@ -1,0 +1,35 @@
+/* pages/driver/driverAgreement/driverAgreement.wxss */
+page{
+  font-size:28rpx;
+  color:#333;
+  width:700rpx;
+  margin:0 auto;
+}
+.item{
+  font-size:32rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.title{
+  font-size:28rpx;
+  font-weight: 600;
+}
+.borderTtop{
+  border-top:2rpx solid #ddd;
+}
+.buttonContainer{
+  background: #fff;
+  border-top:2rpx solid #ddd;
+  text-align: center;
+  height: 130rpx;
+  position: fixed;
+  bottom:0rpx;
+}
+.buttonContainer button{
+  width:700rpx;
+  margin:25rpx auto;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: linear-gradient(to bottom,#02adfa, #028dc9);
+  color:#fff;
+}

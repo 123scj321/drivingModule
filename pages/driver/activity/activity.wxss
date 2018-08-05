@@ -1,0 +1,97 @@
+/* pages/driver/activity/activity.wxss */
+page{
+  background: #f2f2f2;
+}
+.title{
+  width:100%;
+  background: #fff;
+  height: 200rpx;
+  text-align: center;
+  padding-top:50rpx;
+}
+.finishedTask{
+  margin-bottom:30rpx;
+  font-size:28rpx;
+  color:#333;
+}
+.clickGet button{
+  width:250rpx;
+  height: 50rpx;
+  font-size:26rpx;
+  font-weight: 600;
+  background: #089fe0;
+  color:#fff;
+  line-height: 50rpx;
+}
+.clickGet .active{
+  background: #089fe0;
+}
+.clickGet .actived{
+  background: #aaa;
+}
+.overTask{
+  font-size:22rpx;
+  color:#888;
+  margin-top:30rpx;
+}
+.item{
+  margin-top:20rpx;
+  width:100%;
+  display: flex;
+  background: #fff;
+  justify-content:space-around; 
+  height: 120rpx;
+  position: relative;
+}
+.awardImage image{
+  width:86rpx;
+  height: 86rpx;
+  margin:14rpx 0rpx 14rpx 14rpx;
+}
+.text{
+  margin-top:14rpx;
+  margin-left:-25rpx;
+  line-height: 45rpx;
+}
+.text text:first-child{
+  display: block;
+  font-size:30rpx;
+  color:#333;
+}
+.text text:last-child{
+  display: block;
+  font-size:22rpx;
+  color:#888;
+}
+.more image{
+  width:15rpx;
+  height: 25rpx;
+  margin-top:50rpx;
+  margin-right:10rpx;
+}
+.going{
+  position: absolute;
+  top:0rpx;
+  right: 0rpx;
+  font-size:24rpx;
+  color:#fff;
+  background: #ebb420;
+  width:147rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 80rpx 0 0 80rpx;
+   padding-left:20rpx; 
+}
+.gone{
+  position: absolute;
+  top:0rpx;
+  right: -1rpx;
+  font-size:24rpx;
+  color:#fff;
+  background: #aaa;
+  width:147rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 80rpx 0 0 80rpx;
+   padding-left:20rpx; 
+}

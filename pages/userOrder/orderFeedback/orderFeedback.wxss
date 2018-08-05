@@ -1,0 +1,29 @@
+/* pages/order/orderFeedback/orderFeedback.wxss */
+page{
+  background: #f2f2f2;
+}
+.inputText{
+  width:700rpx;
+  height:300rpx;
+  margin:30rpx auto;
+  background: #fff;
+}
+.inputText textarea{
+  background: #fff;
+  width:650rpx;
+  height:250rpx;
+  font-size:30rpx;
+  margin:25rpx;
+  padding-top:25rpx; 
+}
+.textNumber{
+  position: absolute;
+  display: block;
+  width:80rpx;
+  height:30rpx;
+  margin-top:-52rpx;
+  right: 52rpx;
+  font-size:26rpx;
+  z-index:100;
+  font-family:"微软雅黑";
+}

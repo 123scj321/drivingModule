@@ -1,0 +1,41 @@
+/* pages/order/accidentDetail/accidentDetail.wxss */
+.accidentOrderContainer{
+  background: #fff;
+}
+.accidentOrderItem{
+  width:100%;
+}
+.title{
+  border-bottom:2rpx solid #f2f2f2;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size:30rpx;
+  color:#888;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.accidentActive{
+  border:2rpx solid #e7b633;
+  color:#e7b633;
+  line-height: 40rpx;
+  display: inline-block;
+  height: 40rpx;
+  padding: 5rpx 10rpx;
+  margin-top:20rpx;
+}
+.accidentActived{
+    border:2rpx solid #2e8ef0;
+  color:#2e8ef0;
+  line-height: 40rpx;
+  display: inline-block;
+  height: 40rpx;
+  padding: 5rpx 10rpx;
+  margin-top:20rpx;
+}
+.accidentOrderItem:not(.accidentActive) view{
+  font-size:30rpx;
+  color:#333333;
+  padding: 10rpx 25rpx;
+}

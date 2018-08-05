@@ -1,0 +1,24 @@
+<!--pages/map/searchAddress/searchAddress.wxml-->
+<view class='searchAddressContainer'>
+  <!-- title -->
+  <view class='title'>
+    <view class='city'>西安</view>
+    <view class='inputContainer'>
+      <input placeholder='您在哪上车' bindfocus='getFocusHandler' bindblur='setFocusHandler' bindinput='getKeyWord'> </input>
+      <image src="../../../images/user/icon-28.png" style='display:{{deleteShow?"block":"none"}}'></image>
+    </view>
+    <view class='delete'>取消</view>
+  </view>
+  <!--addressList  -->
+  <view class='addressList' style='display:{{searchItemShow?"block":"none"}}'>
+    <view class='addressItem' wx:for="{{addressList}}" wx:key="{{addressList}}" wx:item="item" bindtap='getAddressHandler' data-index="{{index}}">
+      <view class='addressIcon'>
+        <image src="../../../images/user/icon-27.png"></image>
+      </view>
+      <view class='addressDetail'>
+        <view class='addressName'>{{item.title}}</view>
+        <view class='addressText'>{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</view>

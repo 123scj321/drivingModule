@@ -1,0 +1,61 @@
+{
+  "pages":[
+    
+    "pages/map/driverServer/driverServer",
+    "pages/userOrder/allOrder/allOrder",
+    "pages/userOrder/orderDetail/orderDetail",
+    "pages/userOrder/noOrder/noOrder",
+    "pages/userOrder/orderFeedback/orderFeedback",
+    "pages/userOrder/helpFriendDownloadOrder/helpFriendDownloadOrder",
+
+    "pages/user/evaluate/evaluate",
+    "pages/user/getPhone/getPhone",
+    "pages/user/server/server",
+    "pages/user/register/register",
+    
+    "pages/pay/paidOrder/paidOrder",
+    "pages/pay/paidDetail/paidDetail",
+
+    "pages/map/my/my",
+    "pages/map/getOrderNotGoing/getOrderNotGoing",
+    "pages/map/orderGoing/orderGoing",
+    "pages/map/searchAddress/searchAddress",
+    "pages/map/orderAndDriverGoing/orderAndDriverGoing",
+    "pages/coupon/coupon",
+
+    "pages/driver/personalInformation/personalInformation",
+    "pages/driver/wallet/wallet",
+    "pages/driver/getMoney/getMoney",
+    "pages/driver/personalCenter/personalCenter",
+    "pages/driver/knowleage/knowleage",
+    "pages/driver/evaluate/evaluate",
+    "pages/driver/activity/activity",
+    "pages/driver/addIdCardPhoto/addIdCardPhoto",
+    "pages/driver/activityInformation/activityInformation",
+    "pages/driver/driverAgreement/driverAgreement",
+
+    "pages/driverOrder/order/order",
+    "pages/driverOrder/orderDetail/orderDetail",
+    "pages/driverOrder/orderReward/orderReward",
+    "pages/driverOrder/orderedStatus/orderedStatus",
+    "pages/driverOrder/getOrder/getOrder",
+    "pages/driverOrder/accidentOrder/accidentOrder",
+    "pages/driverOrder/accidentDetail/accidentDetail",
+    "pages/driverOrder/bill/bill",
+    "pages/driverOrder/appointmentOrder/appointmentOrder",
+    "pages/driverOrder/orderGoing/orderGoing",
+    "pages/driverOrder/paidDetail/paidDetail",
+    
+    "pages/index/index",
+    "pages/setup/setup",
+    "pages/logs/logs",
+    "pages/example/time/time",
+    "pages/example/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "代驾服务",
+    "navigationBarTextStyle":"white"
+  }
+}

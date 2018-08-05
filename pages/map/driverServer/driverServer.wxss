@@ -1,0 +1,237 @@
+/* pages/map/driverServer/driverServer.wxss */
+/*driverServer  */
+.driverServerContainer{
+  display: flex;
+}
+.myContainer{
+   width:620rpx; 
+}
+.driverServer{
+  width:700rpx;
+  height:500rpx;
+  background: #fff;
+  margin-top:700rpx;
+  margin-left:25rpx;
+}
+.driverTitle{
+  width:100%;
+  height:100rpx;
+  border-bottom: 2rpx solid #ddd;
+  font-size:28rpx;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  line-height:100rpx;
+}
+.driverTitle image{
+  width:32rpx;
+  height:32rpx;
+  margin-top:33rpx;
+  margin-right:10rpx;
+}
+.startAddress{
+  font-size:32rpx;
+ height:100rpx;
+ display:flex;
+ line-height:100rpx;
+ border-bottom:2rpx solid #ddd; 
+}
+.startAddress icon{
+  width:20rpx;
+  height:20rpx;
+  background:#00a0e9;
+  border-radius: 50%;
+  margin-left:40rpx;
+  margin-top:40rpx;
+  margin-right:20rpx;
+  display:block;
+}
+.startAddress input{
+  width:100%;
+  height:100rpx;
+  line-height:100rpx;
+  display: inline-block;
+}
+.goAddress{
+  font-size:32rpx;
+ height:100rpx;
+ display:flex;
+ justify-content: space-between;
+ line-height:100rpx;
+ border-bottom:2rpx solid #ddd; 
+}
+.iconAndGoAddress{
+  display: flex;
+  width:80%;
+}
+.goAddress icon{
+  width:20rpx;
+  height:20rpx;
+  background:#e9a400;
+  border-radius: 50%;
+  margin-left:40rpx;
+  margin-top:40rpx;
+  margin-right:20rpx;
+  display:block;
+}
+.goAddress input{
+  width:100%; 
+  height:100rpx;
+  line-height:100rpx;
+  display: inline-block;
+}
+.serverImage{
+  width:25rpx;
+  height:40rpx;
+  margin-right:40rpx;
+  margin-top:10rpx;
+}
+.serverImage image{
+  width:25rpx;
+  height:40rpx;
+  
+}
+.helpAndMoreDriver{
+  text-align: center;
+  width:100%;
+  display: flex;
+  font-size:26rpx;
+  padding-top:20rpx;
+}
+.helpAndMoreDriver image{
+  width:26rpx;
+  height:20rpx;
+  margin-right:10rpx;
+}
+.help{
+  width:50%;
+  height:100rpx；
+}
+/*privenceRelative  */
+.privenceRelative{
+   width:100%;
+  height:500rpx;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  top:700rpx;
+  z-index:100;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  font-size:26rpx;
+  color:#666666;
+  height: 100rpx;
+  line-height:100rpx;
+  border-bottom:2rpx solid #ddd;
+  padding:0rpx 40rpx;
+}
+.droverCountText{
+  font-size:32rpx;
+  text-align: center;
+  height:90rpx;
+  line-height:90rpx;
+}
+.driverChecked{
+  height:90rpx;
+  line-height:90rpx;
+  font-size:32rpx;
+}
+/* appointmentTimeContainer */
+.appointmentTimeContainer{
+   width:100%;
+  height:500rpx;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  top:700rpx;
+  z-index:100;
+}
+/* getPhoneAndYanZhengMa */
+.getPhoneAndYanZhengMa{
+  width:100%;
+  background: #f1f2f4;
+  height: 100%;
+  position: fixed;
+  top:0rpx;
+  left:0rpx;
+  z-index:1000;
+}
+.getPhoneAndYanZhengMaContainer{
+  position: absolute;
+  width:100%;
+  height: 500rpx;
+  top:250rpx;
+}
+.PYtitle{
+  width:100%;
+  text-align: center;
+  font-size:40rpx;
+  color:#333;
+  margin-bottom:50rpx;
+}
+.getPhone{
+  width:100%;
+  background: #fff;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:30rpx;
+}
+.getPhone input{
+  width:700rpx;
+  margin:0 auto;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.getYanZhengMa{
+  width:100%;
+  background: #fff;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.getYanZhengMa input{
+  width:530rpx;
+  margin-left:25rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.getYanZhengMa button{
+  width:160rpx;
+  height: 60rpx;
+  border-radius: 0;
+  border:none;
+  font-size:26rpx;
+  line-height: 60rpx;
+  text-align: center;
+  padding:0;
+  margin-right: 25rpx;
+  margin-top:25rpx;
+  background: #ddd;
+  color:#fff;
+}
+.getYanZhengMa button::after{
+  border:none;
+}
+.getPhoneAndYanZhengMaButton button{
+  width:700rpx;
+  margin:50rpx auto;
+  background: #ddd;
+  font-size:36rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border:none;
+  border-radius: 7rpx;
+  color:#fff;
+  text-align: center;
+}.getPhoneAndYanZhengMaButton button::after{
+  border:none;
+}
+.borderTop{
+  border-top:2rpx solid #ddd;
+}
+/*引用组件  */
+  @import "../my/my.wxss";  

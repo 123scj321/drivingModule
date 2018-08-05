@@ -1,0 +1,152 @@
+/* pages/order/orderDetail/orderDetail.wxss */
+page{
+  background: #f1f2f4;
+  font-family: "黑体";
+}
+.orderDetailContainer{
+  width:700rpx;
+  margin:20rpx auto;
+}
+.avatarAndPhoneAndMessage{
+  width:100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 175rpx;
+  border-bottom:2rpx solid #ddd;
+}
+.avatar{
+  width:139rpx;
+  display: flex;
+  margin-top:20rpx;
+  margin-left:20rpx;
+  font-size:30rpx;
+  margin-right: 10rpx;
+}
+.avatar image{
+  width:139rpx;
+  height: 139rpx;
+}
+.driverText{
+  width:300rpx;
+  margin-top:30rpx;
+}
+.nickNameAndScore{
+  display: flex;
+  position: relative;
+}
+.nickName{
+  font-size:30rpx;
+  margin-top:40rpx;
+}
+
+.nickNameAndScore image{
+  position: absolute;
+  width:18rpx;
+  height: 17rpx;
+  top:20rpx;
+  left:83rpx;
+}
+.messageAndPhone{
+  display: flex;
+  margin-top:60rpx;
+}
+.evaluateList{
+  font-size:22rpx;
+  color:#333;
+  display: flex;
+  flex-wrap: wrap;
+}
+.evaluateList text{
+  display: inline-block;
+  padding:2rpx 10rpx;
+  background: #f3f8f9;
+  border:2rpx solid #d2d2d2;
+  border-radius: 8rpx;
+  margin-right:10rpx;
+  margin-top:5rpx;
+}
+.messageAndPhone image{
+  width:66rpx;
+  height: 66rpx;
+  margin-left:30rpx;
+  margin-right: 20rpx;
+}
+/*address  */
+.address{
+  display: flex;
+  width:100%;
+  height: 200rpx;
+  background: #fff;
+  margin-bottom:20rpx;
+}
+.addressProgress{
+  width:40rpx;
+  height:150mrpx;
+  margin-left:50rpx;
+  margin-top:25rpx;
+}
+.addressProgress image{
+  width:40rpx;
+  height:133rpx;
+}
+.addressContext{
+  margin-top:25rpx;
+  font-size:30rpx;
+  color:#555;
+  margin-left:25rpx;
+}
+.addressContext view:last-child{
+  margin-top:65rpx;
+}
+/*费用共计  */
+.feeAndmileageAndspendTimeAndother{
+  width:700rpx;
+  margin-top:20rpx;
+  background: #fff;
+  margin:0 auto;
+  min-height: 544rpx;
+}
+.feeAndmileageAndspendTimeAndotherContainer{
+  width:600rpx;
+  margin:0 auto;
+  padding-top:55rpx;
+}
+.title{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+  color:#333;
+}
+.title icon{
+  margin-top:15rpx;
+  width:200rpx;
+  border-top:2rpx solid #ddd;
+}
+.total{
+  font-size:60rpx;
+  color:#333;
+  font-weight:600;
+  text-align: center;
+  font-family: "微软雅黑";
+  margin-top:16rpx;
+  margin-bottom:60rpx;
+}
+.text{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+  color:#323232;
+  margin-bottom:40rpx;
+}
+.yellowText{
+  color:#e39603;
+}
+.bottom{
+  text-align: center;
+  font-size:26rpx;
+  color:#888;
+  margin-top:60rpx;
+}

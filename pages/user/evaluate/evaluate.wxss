@@ -1,0 +1,125 @@
+/* pages/user/evaluate/evaluate.wxss */
+page{
+  background: #f2f2f2;
+  /* padding:25rpx 30rpx; */
+}
+.evaluateContaiern{
+  width:700rpx;
+  margin:0 auto;
+}
+/*evaluated people  */
+.evaluatedPeople{
+  width:100%;
+  background: #ffffff;
+  border-radius: 15rpx;
+  margin-top:25rpx;
+}
+.avatarAndName{
+  width:100%;
+  display: flex;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.avatar{
+  width:150rpx;
+  height:150rpx;
+  margin:20rpx 30rpx;
+}
+.avatar image{
+  width:100%;
+  height:100%;
+}
+.name{
+  margin:20rpx 10rpx;
+  font-size:32rpx;
+  color:#333;
+}
+.nickName{
+  margin-top:40rpx;
+  font-size:32rpx;
+  color:#333;
+}
+.serverText{
+  font-size:28rpx;
+  color:#aaaaaa;
+}
+.serverInformation{
+  width:100%;
+  text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:28rpx;
+  color:333;
+}
+/*server evaluate  */
+.serverEvaluate{
+  padding-bottom: 30rpx;
+  width:100%;
+  background: #ffffff;
+  border-radius: 15rpx;
+  margin-top:25rpx;
+}
+.isSatisfaction{
+  width:100%;
+  text-align: center;
+  padding-top:30rpx;
+  padding-bottom:30rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+  font-size:30rpx;
+  color:#333;
+}
+.answear{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top:30rpx;
+  font-size:28rpx;
+}
+.ansearItem{
+  padding:5rpx 40rpx;
+  border:2rpx solid #aaaaaa;
+  border-radius: 5rpx;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
+.answear .active{
+  background: #0299de;
+  color:#fff;
+  border:none;
+}
+.attitudeAndIdea{
+  width:650rpx;
+  margin-top:30rpx;
+  font-size:28rpx;
+}
+.attitude{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:30rpx;
+}
+.attitudeItem{
+  padding:5rpx 20rpx;
+  border:2rpx solid #d2d2d2;
+  border-radius: 5rpx;
+  margin-left:10rpx; 
+  margin-right:10rpx;
+  margin-top:30rpx;  
+}
+.attitude .active{
+  background: #0299de;
+  color:#fff;
+  border:none;
+}
+.ideaContainer{
+  width:100%;
+  height:200rpx;
+  margin-left:25rpx;
+  background: #f2f2f2;
+  border-radius: 15rpx;
+}
+.ideaContainer textarea{
+  width:100%;
+  padding-left:20rpx;
+  padding-top:10rpx;
+  font-size:26rpx;
+}

@@ -1,0 +1,69 @@
+<!--pages/order/order/order.wxml-->
+<view class='myOrderContainer'>
+  <view class='nav'>
+    <view class='navItem {{!isPaid&&"borderBottom"}}' bindtap='scrollHandler'>
+      未支付
+    </view>
+    <view class='borderRight'></view>
+    <view class='navItem {{isPaid&&"borderBottom"}}' bindtap='scrollHandler'>
+      已支付
+    </view>
+  </view>
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" scroll-with-animation="true" scroll-left="{{left}}" bindscroll="listScrollHandler" bindscrolltoupper="upper" bindscrolltolower="lower">
+  <!--未支付订单的列表  -->
+  <view class='orderList'>
+    <view class='orderItem' wx:for="{{order}}" wx:key="{{order}}" wx:index="index" wx:item="item" wx:if="{{item.status===2}}" bindtap='intoPageHandler' data-skip="../orderDetail/orderDetail" data-id="{{index}}">
+      <view class='itemContainer'>
+        <view class='orderInformation'>
+          <view class='orderTime'>{{item.time}}</view>
+          <view class='address'>
+            <view class='addressProgress'>
+              <icon></icon>
+              <view></view>
+              <icon></icon>
+            </view>
+            <view class='addressContext'>
+              <view class='startAddress'>{{item.startAddress}}</view>
+              <view class='startAddress'>{{item.endAddress}}</view>
+            </view>
+          </view>
+          <view class='orderId'>
+            订单号： <text>{{item.id}}</text>
+          </view>
+        </view>
+        <view class='orderStatus yellowText'>
+        <view>{{item.paid}}元 未支付 <text class='Dept'>催款</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--支付订单的列表  -->
+  <view class='orderList'>
+    <view class='orderItem'  wx:for="{{order}}" wx:key="{{order}}" wx:index="index" wx:item="item" wx:if="{{item.status===3}}" bindtap='' bindtap='intoPageHandler' 
+    data-id="{{index}}" data-skip="../orderDetail/orderDetail">
+      <view class='itemContainer'>
+        <view class='orderInformation'>
+          <view class='orderTime'>{{item.time}}</view>
+          <view class='address'>
+            <view class='addressProgress'>
+              <icon></icon>
+              <view></view>
+              <icon></icon>
+            </view>
+            <view class='addressContext'>
+              <view class='startAddress'>{{item.startAddress}}</view>
+              <view class='startAddress'>{{item.endAddress}}</view>
+            </view>
+          </view>
+          <view class='orderId'>
+            订单号： <text>{{item.id}}</text>
+          </view>
+        </view>
+        <view class='orderStatus'>
+        <view>{{item.paid}}元 已支付</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </scroll-view>
+</view>

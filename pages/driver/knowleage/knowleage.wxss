@@ -1,0 +1,43 @@
+/* pages/driver/knowleage/knowleage.wxss */
+page{
+  background: #fff;
+  font-family: "黑体";
+}
+.title{
+display: flex;
+width:100%;
+justify-content: space-between;
+margin:34rpx auto;
+font-size: 26rpx;
+color:#888;
+}
+.title icon{
+  border-top:2rpx solid #d2d2d2;
+  width:40%;
+  margin-top:13rpx;
+}
+.questionAndAnswear{
+  width:700rpx;
+  margin:35rpx auto;
+}
+.question{
+  width:100%;
+  display: flex;
+  font-size:32rpx;
+  color:#333;
+  justify-content: space-between;
+}
+.more{
+  width:22rpx;
+  height:13rpx;
+  margin-top:14rpx;
+}
+.answear{
+  font-size:26rpx;
+  color:#494e58;
+}
+.show{
+  width:15rpx;
+  height:25rpx;
+  margin-top:7rpx;
+}

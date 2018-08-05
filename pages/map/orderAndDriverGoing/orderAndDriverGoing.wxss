@@ -1,0 +1,74 @@
+/* pages/map/orderAndDriverGoing/orderAndDriverGoing.wxss */
+.driverServerContainer{
+  display: flex;
+}
+.myContainer{
+   width:620rpx; 
+}
+.driverServer{
+  width:100%;
+  height:500rpx;
+  background: #fff;
+  margin-top:700rpx;
+}
+.orderDetailContainer{
+   width:100%;
+  height:350rpx;
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0rpx;
+  z-index:100;
+}
+/*dirverTitle  */
+.dirverTitle{
+width:100%;
+text-align: center;
+color:#e39603;
+font-size:28rpx;
+height:90rpx;
+line-height: 90rpx;
+border-bottom: 2rpx solid #d2d2d2;
+}
+/* driverDetail */
+.driverDetail{
+  width:630rpx;
+  height:150rpx;
+  text-align: center;
+  margin:10rpx auto;
+}
+.waitTime{
+  font-size:22rpx;
+  color:#888;
+  font-weight: 600;
+}
+.time{
+  font-size:60rpx;
+  font-weight:600;
+  color:#555;
+}
+.win{
+  font-size:20rpx;
+  color:#bbb;
+}
+.driverDetailList{
+  width:100%;
+  border-top:2rpx solid #d2d2d2;
+  height: 90rpx;
+  font-size:26rpx;
+  color:#222222;
+  display: flex;
+  justify-content: space-around;
+}
+.driverDetailList button{
+  width:170rpx;
+  height:50rpx;
+  font-size:28rpx;
+  margin-right: 30rpx;
+  line-height: 50rpx;
+  color:#555;
+  margin-top:24rpx;
+  font-family: "宋体";
+}
+/*引用组件  */
+  @import "../my/my.wxss";  

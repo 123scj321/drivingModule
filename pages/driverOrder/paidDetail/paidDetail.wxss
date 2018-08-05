@@ -1,0 +1,39 @@
+/* pages/pay/paidOrder/paidDetail/paidDetail.wxss */
+.apidOrderContainer{
+  width:550rpx;
+  margin:0 auto;
+  font-family: "黑体";
+  color:#333;
+}
+.price{
+  margin:110rpx auto;
+  font-size:40rpx;
+  text-align: center;
+}
+.price text{
+  font-size:80rpx;
+}
+.startPrice,.kmPrice,.reducePrice,.payway,.spendTime{
+  display: flex;
+  font-weight: 0;
+  width:100%;
+  justify-content: space-between;
+  margin-top:57rpx;
+}
+.redText{
+  color:#f14a4a;
+}
+.feeObey{
+  margin-top:400rpx;
+  width:100%;
+  text-align: center;
+}
+.feeObey image{
+  width:30rpx;
+  height:30rpx;
+  display: inline-block;
+}
+.feeObey text{
+ color:#888888;
+ font-size:24rpx;
+}

@@ -1,0 +1,72 @@
+<!--pages/order/accidentOrder/accidentOrder.wxml-->
+<!-- accidentOrderContainer -->
+<view class='accidentOrderContainer'>
+  <view class='orderList'>
+    <view class='orderItem' wx:for="{{order}}" wx:key="{{order}}" wx:index="index" wx:item="item" wx:if="{{item.status===4}}">
+      <view class='orderContext'>
+        <view class='orderInformation'>
+          <view class='orderId'>
+            订单号： <text>{{item.id}}</text>
+          </view>
+          <view class='address'>
+            <view class='addressProgress'>
+              <icon></icon>
+              <view></view>
+              <icon></icon>
+            </view>
+            <view class='addressContext'>
+              <view class='startAddress'>{{item.startAddress}}</view>
+              <view class='startAddress'>{{item.endAddress}}</view>
+            </view>
+          </view>
+          
+        </view>
+        <view class='orderStatus'>
+          <view class='orderTime'>{{item.time}}</view>
+          <view class='orderStatusHandler yellowText'>
+            事故正在处理中
+          </view>
+        </view>
+      </view>
+      <view class='checkDetail' bindtap='intoPageHandler' data-skip="../accidentDetail/accidentDetail?type={{item.status}}" data-id="{{index}}">
+        <view><text>查看详情</text></view>
+        <view class='checkImage'>
+          <image src="../../../images/driver/icon-05.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class='orderItem' wx:for="{{order}}" wx:key="{{order}}" wx:index="index" wx:item="item" wx:if="{{item.status===5}}">
+      <view class='orderContext'>
+        <view class='orderInformation'>
+          <view class='orderId'>
+            订单号： <text>{{item.id}}</text>
+          </view>
+          <view class='address'>
+            <view class='addressProgress'>
+              <icon></icon>
+              <view></view>
+              <icon></icon>
+            </view>
+            <view class='addressContext'>
+              <view class='startAddress'>{{item.startAddress}}</view>
+              <view class='startAddress'>{{item.endAddress}}</view>
+            </view>
+          </view>
+          
+        </view>
+        <view class='orderStatus'>
+          <view class='orderTime'>{{item.time}}</view>
+          <view class='orderStatusHandler blueText'>
+            事故已处理
+          </view>
+        </view>
+      </view>
+      <view class='checkDetail'  bindtap='intoPageHandler' data-skip="../accidentDetail/accidentDetail?type={{item.status}}" data-id="{{index}}">
+        <view><text>查看详情</text></view>
+        <view class='checkImage'>
+          <image src="../../../images/driver/icon-05.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

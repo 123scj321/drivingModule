@@ -1,0 +1,43 @@
+<!--pages/user/evaluate/evaluate.wxml-->
+<!--evaluate container  -->
+<view class='evaluateContaiern'>
+  <!-- evaluated people -->
+  <view class='evaluatedPeople'>
+    <view class='avatarAndName'>
+      <view class='avatar'>
+        <image src="../../../{{driver.avatar}}"></image>
+      </view>
+      <view class='name'>
+        <view class='nickName'>{{driver.name}}</view>
+        <view class='serverText'>"{{driver.say}}"</view>
+      </view>
+    </view>
+    <view class='serverInformation'>本次服务用时{{order.spendTime}}分钟，路成为{{order.distance}}公里</view>
+  </view>
+  <!--server evaluate container  -->
+  <view class='serverEvaluate'>
+    <view class='isSatisfaction'>
+      <view class='question'>
+        您对服务还满意吗？
+      </view>
+      <view class='answear'>
+        <view class='ansearItem {{checkSatisfaction===index&&"active"}}' wx:for="{{satisfaction}}" wx:key="{{satisfaction}}" wx:item="item" wx:index="index" data-id="{{index}}" bindtap='satisfactionHandler'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <view class='attitudeAndIdea'>
+      <view class='attitude'>
+        <view class='attitudeItem {{checkQuestion===index&&"active"}}' wx:for="{{question}}" wx:key="{{question}}" wx:item="item" wx:index="index" data-id="{{index}}" bindtap='questionHandler'>
+          {{item}}
+        </view>
+      </view>
+      <view class='ideaContainer'>
+        <textarea placeholder='想说点什么？' bindblur='ideaHandler'></textarea>
+      </view>
+    </view>
+  </view>
+  <view class='scjSubmitButton' style='margin-top:100rpx'>
+    <button class='scjSubmit' bindtap='evaluateSubmitHandler'>匿名提交</button>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+/* pages/driver/personalCenter/personalCenter.wxss */
+page{
+  background: #f2f2f2;
+}
+.avatarAndWalletAndOrder{
+  width:100%;
+  height: 425rpx;
+  background: #fff;
+}
+.avatar{
+  width:100%;
+  height: 285rpx;
+  background: #4d5562;
+  text-align: center;
+  border-radius:0 0 200% 200%/60%;
+  color:#fff;
+  font-size:30rpx;
+}
+.avatar image{
+  width:140rpx;
+  height: 140rpx;
+  margin-top:40rpx;
+  border-radius: 50%;
+}
+.walletAndOrder{
+  width:100%;
+  display: flex;
+  font-size:28rpx;
+  justify-content: space-around;
+  margin-top:30rpx;
+}
+.wallet,.order{
+  width:50%;
+  text-align: center;
+}
+.wallet text,.order text{
+  font-size:40rpx;
+}
+.blue{
+  color:#1b82ec;
+}
+.evaluateTaskKnowledgeActivity{
+  margin-top:25rpx;
+}
+.listItem{
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.title{
+  font-size:30rpx;
+  color:#333;
+  margin-left:25rpx;
+}
+.title image{
+  width:28rpx;
+  height: 28rpx;
+  margin-right: 30rpx;
+}
+.text{
+  font-size:26rpx;
+  color:#aaaaaa;
+  margin-right: 25rpx;
+}
+.text image{
+  width:15rpx;
+  height: 25rpx;
+  margin-left: 25rpx;
+  margin-top:10rpx;
+}
+.informationHandlerServer{
+  margin-top:25rpx;
+}
+.borderBottom{
+  border-bottom: 2rpx solid #d2d2d2;
+}
+.borderTop{border-bottom:2rpx solid #d2d2d2;}
+.loginoutContainer{
+  width:100%;
+  margin:0 auto;
+  position: fixed;
+  bottom: 0rpx;
+  height: 150rpx;
+}
+.loginoutContainer button{
+  width:700rpx;
+  margin:20rpx auto;
+  border:1rpx solid #888;
+
+  background: none;
+  border-radius: 15rpx;
+  color:#555;
+  font-size:36rpx;
+  font-family: "微软雅黑";
+  height: 90rpx;
+}

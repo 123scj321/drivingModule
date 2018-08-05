@@ -1,0 +1,166 @@
+/* pages/setup/setup.wxss */
+page{
+  background: #f2f2f2;
+}
+.listenWayAndOrderHobbyAndOrderDistance{
+  width:700rpx;
+  background: #fff;
+  margin:20rpx auto;
+  min-height: 940rpx;
+}
+.listenWay,.orderHobby,.orderDistance{
+  width:540rpx;
+  margin:0 auto;
+  text-align: center;
+}
+.title{
+  font-size:32rpx;
+  color:#0299de;
+  display: flex;
+  padding-top:60rpx;
+  padding-bottom:50rpx;
+  justify-content: space-between;
+}
+.title icon{
+  margin-top:20rpx;
+  width:35%;
+  border-top:2rpx solid #d2d2d2;
+}
+.listenWayButton{
+  width:100%;
+  height: 85rpx;
+  line-height: 85rpx;
+}
+.listenWayButtonContainer{
+  display: flex;
+  justify-content: center;
+  width:540rpx;
+  height: 85rpx;
+  border-radius: 170rpx;
+  background: #f2f2f2;
+  font-size:37rpx;
+  color:#555;
+}
+.listenWayButtonContainer view{
+  width:50%;
+  text-align: center;
+  border-radius: 170rpx;
+}
+.listenWayAndOrderHobbyAndOrderDistance .acitve{
+  background: #029ee5;
+  color:#fff;
+}
+.orderHobbyButton{
+  width:100%;
+  height: 85rpx;
+  line-height: 85rpx;
+}
+.orderHobbyButtonContainer{
+  display: flex;
+  justify-content: center;
+  width:540rpx;
+  height: 85rpx;
+  border-radius: 170rpx;
+  background: #f2f2f2;
+  font-size:37rpx;
+  color:#555;
+}
+.orderHobbyButtonContainer view{
+  width:33%;
+  text-align: center;
+  border-radius: 170rpx;
+}
+/*orderDistance  */
+.orderDistance icon{
+  width:20%;
+}
+.orderAndNextButton{
+  width:100%;
+  position: absolute;
+  display: flex;
+  bottom: 40rpx;
+}
+.progressAndStatus{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.progress{
+  width:450rpx;
+}
+.progressStyle{
+  
+  height: 50rpx;
+  display: flex;
+}
+.progressItem{
+  width:90rpx;
+  display: flex;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.progressItem:first-child{
+  width:120rpx;
+  display: flex;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.progressItem:first-child text{
+  border-radius: 24rpx 0 0 24rpx;
+  width:80rpx;
+}
+.progressItem text{
+  display: block;
+  width:50rpx;
+  height: 12rpx;
+  background: #f2f2f2;
+  border-top:2rpx solid #d2d2d2;
+  border-bottom:2rpx solid #d2d2d2;
+  margin-top:14rpx;
+}
+.progressItem icon{
+  display: block;
+  width:40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #f2f2f2;
+  border:2rpx solid #d2d2d2;
+}
+/*实时订单样式  */
+.progressStyle .active text,.progressStyle .active icon{
+  background:#0299de;
+  border:2rpx solid #0299de;
+}
+.progressText{
+  width:390rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size:28rpx;
+  color:#888;
+}
+.status{
+  margin-top:-25rpx;
+  width:100rpx;
+  height: 100rpx;
+  line-height:100rpx;
+  border-radius: 100%;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+  background:linear-gradient(145deg,#55c9ff,#0486c1);
+}
+.getOrder{
+  margin:0 auto;
+  width:150rpx;
+  height: 150rpx;
+  line-height:150rpx;
+  border-radius: 100%;
+  color:#fff;
+  text-align: center;
+  background:linear-gradient(145deg,#55c9ff,#0486c1);
+}
+.bgBlue{
+  background:#0299de;
+}

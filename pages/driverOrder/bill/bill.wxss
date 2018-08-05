@@ -1,0 +1,149 @@
+/* pages/order/bill/bill.wxss */ 
+page{
+  background: #f2f2f2;
+}
+.billContext{
+  width:700rpx;
+  margin:20rpx auto;
+  background: #fff;
+}
+/*avatarAndPhoneAndMessage  */
+.avatarAndPhoneAndMessage{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  height: 175rpx;
+  border-bottom:2rpx solid #d2d2d2;
+}
+.avatar{
+  width:50%;
+  display: flex;
+  margin-top:20rpx;
+  margin-left:20rpx;
+  font-size:30rpx;
+}
+.avatar image{
+  width:139rpx;
+  height: 139rpx;
+  margin-right: 20rpx;
+}
+.avatar text{
+  display:block;
+  height: 139rpx;
+  line-height: 139rpx;
+}
+.messageAndPhone{
+  display: flex;
+  margin-top:60rpx;
+  
+}
+.messageAndPhone image{
+  width:66rpx;
+  height: 66rpx;
+  margin-left:30rpx;
+  margin-right: 20rpx;
+}
+.priceAndMileageAndTime{
+  width:540rpx;
+  margin:0rpx auto;
+  font-family: "黑体";
+}
+.price{
+  text-align: center;
+  font-size:30rpx;
+  margin:60rpx auto;
+  font-family: "黑体";
+}
+.price text{
+  font-size:60rpx;
+}
+.mileageAndTiem view{
+  color:#323232;
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+  margin:35rpx auto;
+}
+.feeDetailList{
+  width:540rpx;
+  margin:0 auto;
+}
+.feeDetailItem{
+  height: 170rpx;
+}
+.feeDetailTitle{
+  width:100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+  color:#888;
+}
+.feeDetailTitle icon{
+  width:35%;
+  border-top:2rpx solid #d2d2d2;
+  margin-top:20rpx;
+}
+.feeDetailTitle .grey{
+  width:35%;
+  border-top:2rpx solid #d2d2d2;
+  margin-top:20rpx;
+}
+.feeDetailPrice{
+  width:100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+  color:#323232;
+  margin:20rpx auto;
+  height: 54rpx;
+  line-height: 54rpx;
+}
+.feeDetailPrice image{
+  width:54rpx;
+  height: 54rpx;
+}
+.reduceButton view{
+  width:54rpx;
+  height:54rpx;
+  border-radius: 50%;
+  border:5rpx solid #029ee4;
+  color:#029ee4;
+  font-size:50rpx;
+  font-weight: 50;
+  line-height: 50rpx;
+  font-family: "微软雅黑";
+}
+.addButton view{
+  width:54rpx;
+  height:54rpx;
+  border-radius: 50%;
+  border:5rpx solid #029ee4;
+  color:#029ee4;
+  font-size:50rpx;
+  font-weight: 50;
+  line-height: 48rpx;
+  font-family: "微软雅黑";
+}
+.feeDetailPrice .activited{
+  color:#d2d2d2;
+  border:5rpx solid #d2d2d2;
+}
+.button{
+  position: fixed;
+  bottom: 0rpx;
+  width:100%;
+  background: #fff;
+  border-top:2rpx solid #d2d2d2;
+  border-bottom:2rpx solid #d2d2d2;
+  text-align: center;
+  height: 130rpx;
+}
+.button button{
+  width:700rpx;
+  margin:20rpx auto;
+  height: 90rpx;
+  background: #029ee4;
+  color:#fff;
+}

@@ -1,0 +1,40 @@
+<!--pages/driver/evaluate/evaluate.wxml-->
+<view class='evaluateContainer'>
+  <!--satisfactionContainer  -->
+  <view class='satisfactionContainer'>
+    <view class='satisfactionText'>
+      <text>我的满意度</text>
+    </view>
+    <view class='satisfactionProgress'>
+      <progress percent="80" color="#2e8ef0"></progress>
+    </view>
+    <view class='satisfactionPrecent'>
+      <text>80%</text>
+    </view>
+  </view>
+  <!--evaluateContextContainer  -->
+   <view class='evaluateContextContainer'>
+    <view class='evaluateContextButtonList'>
+      <view class='evaluateContextButtonItem' wx:for="{{evaluateList}}" wx:index="{{evaluateList}}" wx:key="index" wx:item="item">{{item.title}} <text>{{item.count}}</text></view>
+    </view>
+    <view class='borderTop'></view>
+    <view class='evaluateContextList'>
+      <view class='evaluateContextTitle'>
+        <text>用户评价</text>
+      </view>
+      <block  wx:for="{{evaluate}}" wx:key="{{evaluate}}" wx:index="index" wx:item="item">
+      <view class='evaluateContextItem '>
+        <view class='phoneAndText'>
+          <text>匿名评价</text>
+          <view></view>
+          <text>态度：{{item.satisfaction}}；问题：{{item.satisfaction}}；希望：{{item.idea}}</text>
+        </view>
+        <view class='time'>
+          <text>2018-08-09</text>
+        </view>
+      </view>
+       <view class='borderTop'></view>
+      </block>
+    </view>
+  </view> 
+</view>

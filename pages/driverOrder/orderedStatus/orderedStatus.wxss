@@ -1,0 +1,99 @@
+/* pages/order/orderedStatus/orderedStatus.wxss */
+/*avatarAndPhoneAndMessage  */
+.avatarAndPhoneAndMessage{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  height: 175rpx;
+  border-bottom:2rpx solid #d2d2d2;
+}
+.avatar{
+  width:139rpx;
+  display: flex;
+  margin-top:20rpx;
+  margin-left:20rpx;
+  font-size:30rpx;
+  margin-right: 10rpx;
+}
+.avatar image{
+  width:139rpx;
+  height: 139rpx;
+}
+.driverText{
+  width:300rpx;
+  margin-top:30rpx;
+}
+.nickNameAndScore{
+  display: flex;
+  position: relative;
+}
+.nickName{
+  font-size:30rpx;
+}
+.score{
+  font-size:24rpx;
+  padding-left:43rpx;
+  padding-top:8rpx;
+}
+.nickNameAndScore image{
+  position: absolute;
+  width:18rpx;
+  height: 17rpx;
+  top:20rpx;
+  left:83rpx;
+}
+.messageAndPhone{
+  display: flex;
+  margin-top:60rpx;
+}
+.evaluateList{
+  font-size:22rpx;
+  color:#333;
+  display: flex;
+  flex-wrap: wrap;
+}
+.evaluateList text{
+  display: inline-block;
+  padding:2rpx 10rpx;
+  background: #f3f8f9;
+  border:2rpx solid #d2d2d2;
+  border-radius: 8rpx;
+  margin-right:10rpx;
+  margin-top:5rpx;
+}
+.messageAndPhone image{
+  width:66rpx;
+  height: 66rpx;
+  margin-left:30rpx;
+  margin-right: 20rpx;
+}
+.startAddressAndEndAddress{
+  width:700rpx;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size:26rpx;
+}
+.startAddressAndEndAddress image{
+  width:92rpx;
+  height: 16rpx;
+  margin-top:35rpx;
+  display: block;
+}
+.button{
+  position: fixed;
+  bottom: 0rpx;
+  width:100%;
+  background: #fff;
+  text-align: center;
+  height: 130rpx;
+}
+.button button{
+  width:700rpx;
+  margin:20rpx auto;
+  height: 90rpx;
+  background: #029ee4;
+  color:#fff;
+}

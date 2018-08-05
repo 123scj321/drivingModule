@@ -1,0 +1,39 @@
+<!--pages/order/orderReward/orderReward.wxml-->
+<view class='orderRewardContainer'>
+  <view class='getReward'>
+    <view class='timeAndReward'>
+      <view class='time'>{{award.start_time}}-{{award.end_time}}</view>
+      <view class='reward'>{{award.title}}</view>
+    </view>
+    <view class='rewardButton'>
+      <button class='{{award.status?"active":"actived"}}' bindtap='getAwardHandler'>{{award.status?"领取奖励":"已领取"}}</button>
+    </view>
+  </view>
+  <!--reward condition container  -->
+  <view class='rewardConditionContainer'>
+    <view class='title'>奖励条件</view>
+    <view class='context'>
+      <view>
+        <text>1.活动地区：{{award.condition.area}}</text>
+        <text class='{{award.status?"blueText":"greyText"}}'>{{award.condition.area_status===true?"符合":"不符合"}}</text>
+      </view>
+      <view>
+        <text>2.指定派单接单率：{{award.condition.effict*100}}%</text>
+        <text class='{{award.status?"blueText":"greyText"}}'>{{award.condition.effict>=0.8?"符合":"不符合"}}（80%）</text>
+      </view>
+      <view>
+        <text>3. 指派订单完成率：{{award.condition.finished*100}}%</text>
+        <text class='{{award.status?"blueText":"greyText"}}'>{{award.condition.finished>0.9?"符合":"不符合"}}（90%）</text>
+      </view>
+    </view>
+  </view> 
+  <!--activity knowledge container  -->
+   <view class='rewardConditionContainer'>
+    <view class='title'>活动须知</view>
+    <view class='context'>
+      <view wx:for="{{award.condition.knowledge}}" wx:key="{{award.condition.knowledge}}" wx:index="index" wx:item="item">
+        <text>{{index+1}}.{{item}}</text>
+      </view>
+    </view>
+  </view> 
+</view>

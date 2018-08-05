@@ -1,0 +1,22 @@
+/* pages/driver/activityInformation/activityInformation.wxss */
+.activityContainer{
+  width:700rpx;
+  margin:0 auto;
+}
+.title{
+  height: 90rpx;
+  font-size:32rpx;
+  line-height:90rpx;
+  font-family: "黑体";
+  color:#333;
+}
+.time{
+  font-size:26rpx;
+  color:#888;
+}
+.activityItem{
+  text-indent: 2em;
+  margin-top:40rpx;
+  font-size:26rpx;
+  color:#555;
+}

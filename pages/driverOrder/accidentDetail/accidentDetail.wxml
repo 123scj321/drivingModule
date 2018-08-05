@@ -1,0 +1,68 @@
+<!--pages/order/accidentDetail/accidentDetail.wxml-->
+<!-- accidentOrderContainer -->
+<view class='accidentOrderContainer'>
+  <view class='accidentOrderList'>
+    <view class='accidentOrderItem'>
+      <view class='title'>
+        <text>订单信息</text>
+        <text class='{{order.status===4?"accidentActive":"accidentActived"}}'>{{order.status===4?"事故正在处理中":"事故已处理"}}</text>
+      </view>
+      <view>
+        订单号：<text>{{order.id}}</text>
+      </view>
+      <view>
+        发生时间：<text>{{order.time}}</text>
+      </view>
+      <view>
+        出发地址：<text>{{order.startAddress}}</text>
+      </view>
+      <view>
+        到达地址：<text>{{order.endAddress}}</text>
+      </view>
+    </view>
+    <!--item  -->
+    <view class='accidentOrderItem'>
+      <view class='title'>
+        <text>事故信息</text>
+      </view>
+      <view>
+        事故原由：<text>在XX路到XX路路口发生剐蹭事故</text>
+      </view>
+      <view>
+        车主姓名：<text>王先生</text>
+      </view>
+      <view>
+        车辆号牌：<text>陕A B2652</text>
+      </view>
+      <view>
+        联系电话：<text>132 0000 0000</text>
+      </view>
+    </view>
+    <!--item  -->
+    <view class='accidentOrderItem'>
+      <view class='title'>
+        <text>服务信息</text>
+      </view>
+      <view>
+        服务专员<text>张三</text>
+      </view>
+      <view>
+        联系电话：<text>182 0000 0000</text>
+      </view>
+      <view>
+        代驾人员：<text>李四</text>
+      </view>
+      <view>
+        工号：<text>123456</text>
+      </view>
+      <view>
+        联系电话：<text>183 0000 0000</text>
+      </view>
+    </view>
+  </view>
+  <!--抬高地步  -->
+  <view style='height:130rpx;'></view>
+  <view class='button' style='position:fixed;bottom:0rpx;'>
+    <button>查看处理结果</button>
+  </view>
+</view>

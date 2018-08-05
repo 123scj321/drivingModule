@@ -1,0 +1,66 @@
+<!--pages/order/orderDetail/orderDetail.wxml-->
+<!-- detailContainer -->
+<view class='detailContainer'>
+  <!--  driverDetail first floor-->
+  <view class='driverDetail'>
+    <view class='driverAvatar'>
+      <image src="../../../{{driver.avatar}}"></image>
+    </view>
+    <view class='driverContext'>
+      <view class='driverText'>
+        <view>{{driver.name}}</view>
+        <view class='workTime'>
+          <view>{{driver.workTime}}年驾龄</view>
+          <image src="../../../images/user/icon-03.png"></image>
+        </view>
+      </view>
+      <view class='orderAndScore'>
+        <text>{{driver.order_ids.length}}单</text>
+        <view class='score'>
+          <image src="../../../images/user/icon-05.png"></image>{{driver.score}}分
+        </view>
+      </view>
+      <view class='say'>
+        "{{driver.say}}"
+      </view>
+    </view>
+    <view class='phoneImage' bindtap='callPhoneHandler'>
+      <image src="../../../images/user/icon-04.png"></image>
+    </view>
+  </view>
+   <!-- feeDetail second floor  -->
+   <view class='feeDetailAndTotal' bindtap='skipPageHandler' data-skip="../../pay/paidDetail/paidDetail">
+    <view class='total'>
+      <text>{{order.paid}}</text>元
+    </view>
+    <view class='feeDetail'>
+      <text>费用明细</text>
+      <image src="../../../images/user/icon-01.png"></image>
+    </view>
+  </view> 
+  <!--orderDetail three floor  -->
+   <view class='orderDetail'>
+    <view class='orderId'>
+      订单号码：<text>{{order.id}}</text>    
+    </view>
+    <view class='orderMoney'>
+      订单金额：<text>{{order.due}}元 （实付：{{order.paid}}元）</text>    
+    </view>
+    <view class='orderTime'>
+      下单时间：<text>{{order.time}}</text>    
+    </view>
+    <view class='goAddress'>
+      出发地址：<text>{{order.startAddress}}</text>    
+    </view>
+    <view class='onAddress'>
+      到达地址：<text>{{order.endAddress}}</text>    
+    </view>
+    <view class='relativePhone'>
+      联系号码：<text>{{serverPhone}}</text>    
+    </view>
+  </view>
+  <view class='goValueAndFeedback'>
+    <button bindtap='skipPageHandler' data-skip="../../user/evaluate/evaluate">去评价</button>
+    <button bindtap='skipPageHandler' data-skip="../orderFeedback/orderFeedback">订单反馈</button>
+  </view>  
+</view>

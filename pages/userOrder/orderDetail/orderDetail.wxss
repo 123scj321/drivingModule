@@ -1,0 +1,131 @@
+/* pages/order/orderDetail/orderDetail.wxss */
+page{
+  background: #f2f2f2;
+  font-family: "微软雅黑";
+}
+.detailContainer{
+  width:700rpx;
+  margin:40rpx auto;
+  border-radius: 15rpx;
+  background: #fff;
+}
+/*driverDetail first floor  */
+.driverDetail{
+  width:630rpx;
+  height:215rpx;
+  display: flex;
+  justify-content: space-between;
+  margin:0 auto;
+}
+.driverAvatar{
+  width:140rpx;
+  height:140rpx;
+  margin-top:30rpx;
+}
+.driverAvatar image{
+  width:140rpx;
+  height:140rpx;
+}
+.driverContext{
+  width:400rpx;
+  height:130rpx;
+  margin-top:40rpx;
+}
+.driverText,.orderAndScore{
+  width:100%;
+  display: flex;
+  /* padding-top:20rpx; */
+  font-size:30rpx;
+  color:#333333;
+  height:44rpx;
+}
+.workTime{
+  color:#e39603;
+  font-size:20rpx;
+  margin-left:24rpx;
+  position: relative;
+}
+.workTime view{
+  border:2rpx solid #e39603;
+  padding:5rpx 10rpx;
+  border-radius: 8rpx;
+}
+.workTime image{
+  width:18rpx;
+  height:18rpx;
+  position: absolute;
+  top:30rpx;
+  left:-5rpx;
+}
+.orderAndScore image{
+  width:22rpx;
+  height:22rpx;
+  margin-left:30rpx;
+}
+.say{
+  font-size:26rpx;
+  color:#888888;
+}
+
+.phoneImage{
+  margin-top:12%;
+}
+.phoneImage image{
+  width:50rpx;
+  height:50rpx;
+}
+/*feeDetailAndTotal  */
+.feeDetailAndTotal{
+  width:100%;
+  height:195rpx;
+  text-align: center;
+  border-top:2rpx solid #dddddd;
+  border-bottom: 2rpx solid #dddddd; 
+}
+.total{
+  margin-top:50rpx;
+  font-size:26rpx;
+}
+.total text{
+  font-size:60rpx;
+   color:#222222;
+}
+.feeDetail{
+  font-size:22rpx;
+  color:#505050;
+  display: flex;
+  justify-content: center;
+}
+.feeDetail text{
+  display: inline-block;
+}
+.feeDetail image{
+  width:20rpx;
+  height:25rpx;
+  margin-top:5rpx;
+  padding-left:10rp;
+}
+.orderDetail{
+  width:630rpx;
+  margin:50rpx auto;
+  font-size:28rpx;
+  color:#888888;
+}
+.orderDetail view{
+  margin-top:40rpx;
+}
+.orderDetail view text{
+  color:#333333;
+}
+/*goValueAndFeedback  */
+.goValueAndFeedback{
+  width:50%;
+  margin-left:50%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+}
+.goValueAndFeedback button{
+  font-size:24rpx;
+  color:#222222;
+}

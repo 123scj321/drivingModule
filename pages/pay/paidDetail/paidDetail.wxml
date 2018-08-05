@@ -1,0 +1,29 @@
+<!--pages/pay/paidOrder/paidDetail/paidDetail.wxml-->
+<view class='apidOrderContainer'>
+  <view class='price'>
+    <text>{{total}}</text>元
+  </view>
+  <view class='startPrice'>
+    <text>起步价</text>
+    <text>{{order.startPrice}}元</text>
+  </view>
+  <view class='kmPrice'>
+    <text>里程费（{{order.distance}}）</text>
+    <text>{{order.mileageFee}}元</text>
+  </view>
+  <view class='spendTime'>
+    <text>时长费（{{order.spendTime}}分钟）</text>
+    <text>{{order.durationFee}}元</text></view>
+  <view class='reducePrice redText'>
+    <text>折扣券</text>
+    <text>-{{reduce}}元</text>
+  </view>
+  <view class='payway redText'>
+    <text>{{order.payWay===0?"微信":"支付宝"}}支付</text>
+    <text>-{{order.paid}}元</text>
+  </view>
+  <view class='feeObey'>
+    <image src="../../../images/user/icon-18.png"></image>
+    <text>计价规则</text>
+  </view>
+</view>

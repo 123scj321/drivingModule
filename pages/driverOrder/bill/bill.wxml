@@ -1,0 +1,93 @@
+<!--pages/order/bill/bill.wxml-->
+<view class='billContainer'>
+  <view class='billContext'>
+    <view class='avatarAndPhoneAndMessage'>
+      <view class='avatar'>
+        <image src="../../../{{driver.avatar}}"></image>
+        <text>{{driver.name}}</text>
+      </view>
+      <view class='messageAndPhone'>
+        <view class='message'>
+          <image src="../../../images/driver/icon-26.png"></image>
+        </view>
+        <view class='phone' bindtap='callPhoneHandler'>
+          <image src="../../../images/driver/icon-21.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class='priceAndMileageAndTime'>
+      <view class='price'>
+        <text>{{order.paid}}</text> 元
+      </view>
+      <view class='mileageAndTiem'>
+        <view class='mileage'>
+          <text>里程8.2公里</text>
+          <text>45.60元</text>
+        </view>
+        <view class='time'>
+          <text>里程8.2公里</text>
+          <text>45.60元</text>
+        </view>
+      </view>
+    </view> 
+     <view class='feeDetailList'>
+      <view class='feeDetailItem'>
+        <view class='feeDetailTitle'>
+          <icon class=''></icon>
+          <text>高速费</text>
+          <icon></icon >
+        </view>
+        <view class='feeDetailPrice'>
+          <view class='reduceButton'>
+            <view class='{{feeDetail.speedFee==0&&"activited"}}' bindtap='addAdnReduceHandler' data-params="speedFee" data-types="reduce">-</view>
+          </view>
+          <view class='feeDetailText'>
+            <text>{{feeDetail.speedFee}}元</text>
+          </view>
+          <view class='addButton'>
+            <view bindtap='addAdnReduceHandler' data-params="speedFee" data-types="add">+</view>
+          </view>
+        </view>
+      </view>
+      <view class='feeDetailItem'>
+        <view class='feeDetailTitle'>
+          <icon></icon>
+          <text>过路费</text>
+          <icon></icon>
+        </view>
+        <view class='feeDetailPrice'>
+          <view class='reduceButton'>
+             <view class='{{feeDetail.roadToll==0&&"activited"}}' bindtap='addAdnReduceHandler' data-params="roadToll" data-types="reduce">-</view>
+          </view>
+          <view class='feeDetailText'>
+            <text>{{feeDetail.roadToll}}元</text>
+          </view>
+          <view class='addButton' >
+             <view bindtap='addAdnReduceHandler' data-params="roadToll" data-types="add">+</view>
+          </view>
+        </view>
+      </view>
+      <view class='feeDetailItem'>
+        <view class='feeDetailTitle'>
+          <icon></icon>
+          <text>其他费</text>
+          <icon></icon>
+        </view>
+        <view class='feeDetailPrice'>
+          <view class='reduceButton'>
+             <view class='{{feeDetail.otherFee==0&&"activited"}}' bindtap='addAdnReduceHandler' data-params="otherFee" data-types="reduce">-</view>
+          </view>
+          <view class='feeDetailText'>
+            <text>{{feeDetail.otherFee}}元</text>
+          </view>
+          <view class='addButton'>
+             <view bindtap='addAdnReduceHandler' data-params="otherFee" data-types="add">+</view>
+          </view>
+        </view>
+      </view>
+    </view> 
+  </view>
+  <view class='button' bindtap='intoPageHandler' data-skip="../order/order">
+    <button>发起收款</button>
+  </view>
+</view>

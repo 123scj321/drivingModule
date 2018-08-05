@@ -1,0 +1,23 @@
+<!--pages/driver/getMoney/getMoney.wxml-->
+<view class='getMoneyContainer'>
+  <view class='bankContainer'>
+    <text>提现到</text>
+    <text>银行卡号（8888）</text>
+    <image src="../../../images/driver/icon-05.png"></image>
+  </view>
+  <view class='borderTop'></view>
+  <view class='getMoneyCount'>
+    <view>提现金额</view>
+    <view class='showMoney'>
+    <image src="../../../images/driver/icon-37.png"></image> 
+    <input></input>
+    </view>
+  </view>
+  <view class='borderTop'></view>
+  <view class='overMoney'>
+    可提现余额0.00元
+  </view>
+  <view class='scjSubmitButton marginTop'bindtap='intoPageHandler' data-skip="../wallet/wallet" >
+    <button class='scjSubmit'>确认提现</button>
+  </view>
+</view>

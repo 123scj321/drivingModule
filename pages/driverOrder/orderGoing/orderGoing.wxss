@@ -1,0 +1,16 @@
+/* pages/order/orderGoing/orderGoing.wxss */
+.button{
+  position: fixed;
+  bottom: 0rpx;
+  width:100%;
+  background: #fff;
+  text-align: center;
+  height: 130rpx;
+}
+.button button{
+  width:700rpx;
+  margin:20rpx auto;
+  height: 90rpx;
+  background: #029ee4;
+  color:#fff;
+}

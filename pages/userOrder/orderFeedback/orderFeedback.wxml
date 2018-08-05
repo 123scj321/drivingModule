@@ -1,0 +1,11 @@
+<!--pages/order/orderFeedback/orderFeedback.wxml-->
+<!--order feedback container  -->
+<view class='orderFeedback'>
+  <view class='inputText'>
+    <textarea bindblur="bindTextAreaBlur" placeholder="请输入您的订单反馈......" />
+    <view class='textNumber'>1/200</view>
+  </view>
+  <view class='scjSubmitButton'>
+    <button class='scjSubmit' bindtap='orderFeedbackHandler'>提交</button>
+  </view>
+</view>
