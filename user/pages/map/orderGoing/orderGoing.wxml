@@ -1,0 +1,74 @@
+<!--pages/map/getOrderNotGoing/getOrderNotGoing.wxml-->
+<view class='driverServerContainer'>
+ <view class='myContainer' hidden='{{myShow}}'>
+  <view class='myContainer'>
+    <view class='myLeft'>
+      <view class='avatarAndLogin'>
+        <image  src="{{avatar}}"></image>
+        <view>{{username}}</view>
+      </view>
+      <view class='myList'>
+        <view class='myItem ' data-skip="../../order/allOrder/allOrder" bindtap='intoPageHandler'>
+          <view class='iconfont icon-wenben'></view>
+          <view>全部订单</view>
+        </view>
+        <view class='myItem' data-skip="../orderGoing/orderGoing" bindtap='intoPageHandler'>
+          <view class='iconfont icon-biao'></view>
+          <view>进行中</view>
+          <view class='showCount' style='display:{{orderGoing?"inline-block":"none"}};color:#fff'>1</view>
+        </view>
+        <view class='myItem' data-skip="../../coupon/coupon" bindtap='intoPageHandler'>
+          <view class='iconfont icon-youhuiquan'></view>
+          <view>优惠券</view>
+        </view>
+        <view class='myItem' bindtap='callPhoneHandler'>
+          <view class='iconfont icon-weibiaoti'></view>
+          <view>联系客服</view>
+        </view>
+      </view>
+      <view class='loginOut'>
+        <button class='loginOutButton' open-type="getUserInfo" bindgetuserinfo="loginHandler">{{buttonText}}</button>
+      </view>
+    </view>
+  </view>
+ </view>
+<view class='driverContainer'> 
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 750rpx; height: 812rpx;">
+  </map>
+  <view class='orderDetailContainer'>
+    <view class='driverDetail'  >
+      <view class='driverAvatar' bindtap='intoPaidHandler'>
+        <image src="../../../{{driver.avatar}}"></image>
+      </view>
+        <view class='driverContext'>
+          <view class='driverText'>
+            <view>{{driver.name}}</view>
+            <view class='workTime'>
+              <view>{{driver.workTime}}年驾龄</view>
+              <image src="../../../images/icon/icon-03.png"></image>
+            </view>
+          </view>
+          <view class='orderAndScore'>
+            <text>{{driver.order_ids.length}}单</text>
+          <view class='score'>
+            <image src="../../../images/icon/icon-05.png"></image>{{driver.score}}分
+          </view>
+        </view>
+        <view class='say'>
+          "{{driver.say}}"
+        </view>
+      </view>
+      <view class='phoneImage' bindtap='callPhoneHandler'>
+        <image src="../../../images/icon/icon-04.png"></image>
+      </view>
+    </view>
+    <view class='driverDetailList'>
+      <view class='driverDetailItem'>发消息</view>
+      <view class='driverDetailItem' bindtap='deleteOrderHandler'>取消订单</view>
+      <view class='driverDetailItem'>交通上报</view>
+      <view class='driverDetailItem' bindtap='onlineServerHandler'>在线客服</view>
+    </view>
+  </view>
+</view>
+</view> 
+

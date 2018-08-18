@@ -1,0 +1,47 @@
+<!--pages/order/getOrder/getOrder.wxml-->
+<view class='appointmentOrder'>
+  <view class='appointment'>
+    <view class='appointmentImage'>
+      <image src="../../../images/icon/icon-17.png"></image>
+    </view>
+    <view class='startAddressAndEndAddressAndDistance'>
+      <view class='address'>
+        <view class='addressProgress'>
+          <icon></icon>
+          <view></view>
+          <icon></icon>
+        </view>
+        <view class='addressContext'>
+          <view class='startAddress'>{{order.startAddress}}</view>
+          <view class='endAddress'>{{order.endAddress}}</view>
+        </view>
+      </view>
+      <view class='distanceAndPrice'>
+        <view class='distance'>
+          <view class='title'>订单距离您</view>
+          <view class='context'>
+            <text>{{order.distance}}</text>公里
+          </view>
+        </view>
+        <view class='price'>
+          <view class='title'>订单价格</view>
+          <view class='context'>
+            <text>{{order.paid}}</text>元
+          </view>
+        </view>
+      </view>
+      <view class='reminder'>
+        <!-- 点击订单即可查看订单位置 -->
+      </view>
+    </view>
+  </view>
+  <!--orderAndNextButton  -->
+   <view class='orderAndNextButton'>
+    <view class='getOrder' bindtap='intoPageHandler' data-skip="../orderedStatus/orderedStatus">
+        <text>抢单</text>
+        <view></view>
+        <text>{{time}}秒</text>
+    </view>
+  </view> 
+</view>
+

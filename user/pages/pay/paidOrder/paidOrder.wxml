@@ -1,0 +1,115 @@
+<!--pages/pay/paidOrder/paidOrder.wxml-->
+<!-- detailContainer -->
+<view class='paidOrderContainer'>
+  <!--  driverDetail first floor-->
+  <view class='driverDetail'>
+    <view class='driverAvatar'>
+      <image src="../../../{{driver.avatar}}"></image>
+    </view>
+    <view class='driverContext'>
+      <view class='driverText'>
+        <view>{{driver.name}}</view>
+        <view class='workTime'>
+          <view>{{driver.workTime}}年驾龄</view>
+          <image src="../../../images/icon/icon-03.png"></image>
+        </view>
+      </view>
+      <view class='orderAndScore'>
+        <text>{{driver.order_ids.length}}单</text>
+        <view class='score'>
+          <image src="../../../images/icon/icon-05.png"></image>{{driver.score}}分
+        </view>
+      </view>
+      <view class='say'>
+        "{{driver.say}}"
+      </view>
+    </view>
+    <view class='phoneImage' bindtap='callPhoneHandler'>
+      <image src="../../../images/icon/icon-13.png"></image>
+    </view>
+  </view>
+  <!--fee detail container -->
+  <view class='feeDetail'>
+    <view class='feeTitle'>
+      <icon class='leftLine'></icon>
+      <text>车费详情</text>
+      <icon class='rightLine'></icon>
+    </view>
+    <!--total and detail  -->
+    <view class='totalAndDetail'>
+      <view class='total'>
+        <text>费用合计</text>
+        <text>{{order.due}}元</text>
+      </view>
+      <view class='checkDetail'>
+        <view class='checkText' bindtap='checkOrderHandler'>
+          <text>查看详情</text>
+          <image src="{{checkOrder?'../../../images/icon/icon-16.png':'../../../images/icon/icon-14.png'}}" class='{{!checkOrder&&"imageDown"}}'></image>
+        </view>
+        <view class='checkDetailContext' hidden='{{checkOrder}}'>
+          <view class='stepStart'>
+            <text>起步价</text>
+            <text>{{order.startPrice}}元</text>
+          </view>
+          <view class='kmPrice'>
+            <text>历程价（{{order.distance}}）</text>
+            <text>{{order.mileageFee}}元</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- coupon and detail -->
+     <view class='couponAndDetail redText'>
+      <view class='coupon redText'>
+        <text>优惠</text>
+        <text>-{{reduce}}元</text>
+      </view>
+      <view class='checkDetail'>
+        <view class='checkText redText' bindtap='checkCouponHandler'>
+          <text>查看详情</text>
+          <image src="{{checkCoupon?'../../../images/icon/icon-17.png':'../../../images/icon/icon-15.png'}}"></image>
+        </view>
+      </view>
+      <view class='checkDetailContext' hidden='{{checkCoupon}}' >
+          <view>
+            <text>新人优惠券</text>
+            <text>{{reduce}}元</text>
+          </view>
+      </view>
+    </view> 
+     <view class='paidDetail'>
+      <view class='paidContext'>
+        需支付： <text>{{total}}</text>元
+      </view>
+    </view> 
+  </view>
+  <!--pay way container  -->
+   <view class='payway'>
+    <view class='paywayTitle'>
+      <icon class='leftLine'></icon>
+      <text>支付方式</text>
+      <icon class='rightLine'></icon>
+    </view>
+    <view class='wechatPay'>
+      <view class='wechatImageAndText'>
+        <image src="../../../images/icon/icon-09.png"></image>
+        <text>微信支付</text>
+      </view>
+      <view class='checked' bindtap='choosePayWayHandler'>
+        <image src='{{wechatOrZhifubao?"../../../images/icon/icon-11.png":"../../../images/icon/icon-10.png"}}'></image>
+      </view>
+    </view>
+    <view class='zhifubaoPay'>
+      <view class='zhifubaoImageAndText'>
+        <image src="../../../images/icon/icon-12.png"></image>
+        <text>支付宝支付</text>
+      </view>
+      <view class='checked' bindtap='choosePayWayHandler'>
+        <image src='{{!wechatOrZhifubao?"../../../images/icon/icon-11.png":"../../../images/icon/icon-10.png"}}'></image>
+      </view>
+    </view>
+  </view> 
+</view>
+<view class='.scjSubmitButton'>
+  <button class='scjSubmit' bindtap='payHandler'>确认支付</button>
+</view>

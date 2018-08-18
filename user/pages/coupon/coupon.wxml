@@ -1,0 +1,25 @@
+<!--pages/coupon/coupon.wxml-->
+<view class='couponContainer'>
+  <!--title  -->
+  <view class='couponTitle'>
+    <text>我的优惠券</text>
+  </view>
+  <view class='couponList'>
+    <view class='couponItem' wx:for="{{coupon}}" wx:key="{{coupon}}" wx:item="item" wx:index="index">
+      <view class='reduceAndType'>
+        <view class='reduce'>
+          <text> {{item.reduce}}</text>
+           <text> </text> 
+          折
+        </view>
+        <view class='type'>{{item.type}}</view>
+      </view>
+      <view class='couponDetail'>
+        <view>戴家专属劵{{item.reduce}}折</view>
+        <view>限代驾，最高折扣{{item.reduceMoney}}元</view>
+        <view>有效期：{{item.startTime}}至{{item.endTime}}</view>
+        <image src="../../images/icon/icon-26.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

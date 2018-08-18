@@ -1,0 +1,31 @@
+{
+  "pages":[
+    
+    "pages/map/driverServer/driverServer",
+    "pages/order/allOrder/allOrder",
+    "pages/order/orderDetail/orderDetail",
+    "pages/order/noOrder/noOrder",
+    "pages/order/orderFeedback/orderFeedback",
+    "pages/order/helpFriendDownloadOrder/helpFriendDownloadOrder",
+
+    "pages/user/evaluate/evaluate",
+    "pages/user/getPhone/getPhone",
+    "pages/user/server/server",
+    
+    "pages/pay/paidOrder/paidOrder",
+    "pages/pay/paidDetail/paidDetail",
+
+    "pages/map/my/my",
+    "pages/map/getOrderNotGoing/getOrderNotGoing",
+    "pages/map/orderGoing/orderGoing",
+    "pages/map/searchAddress/searchAddress",
+    "pages/map/orderAndDriverGoing/orderAndDriverGoing",
+    "pages/coupon/coupon"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "代驾",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/driver/addIdCardPhoto/addIdCardPhoto.wxml-->
+<!-- add Id Card Photo container -->
+<view class='addIdCardPhoto'>
+  <view class='addFrontPhoto' bindtap='uploadFile'>
+    点击添加正面图片
+  </view>
+  <view class='addReservePhoto'  bindtap='uploadFile'>
+    点击添加反面图片
+  </view>
+  <view class='button positionBottom' bindtap='intoPageHandler' data-skip="../personalInformation/personalInformation">
+    <button>点击提交</button>
+  </view>
+</view>

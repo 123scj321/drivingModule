@@ -1,0 +1,87 @@
+<!--pages/map/driverServer/driverServer.wxml-->
+<!--dirver container  -->
+<view class='driverServerContainer'>
+ <view class='myContainer' hidden='{{myShow}}'>
+  <view class='myContainer'>
+    <view class='myLeft'>
+      <view class='avatarAndLogin'>
+        <image  src="{{avatar}}"></image>
+        <view>{{username}}</view>
+      </view>
+      <view class='myList'>
+        <view class='myItem ' data-skip="../../order/allOrder/allOrder" bindtap='intoPageHandler'>
+          <view class='iconfont icon-wenben'></view>
+          <view>全部订单</view>
+        </view>
+        <view class='myItem' data-skip="../orderGoing/orderGoing" bindtap='orderGoingHandler'>
+          <view class='iconfont icon-biao'></view>
+          <view>进行中</view>
+          <view class='showCount' style='display:{{orderGoing?"inline-block":"none"}}'>1</view>
+        </view>
+        <view class='myItem' data-skip="../../coupon/coupon" bindtap='intoPageHandler'>
+          <view class='iconfont icon-youhuiquan'></view>
+          <view>优惠券</view>
+        </view>
+        <view class='myItem' bindtap='callPhoneHandler'>
+          <view class='iconfont icon-weibiaoti'></view>
+          <view>联系客服</view>
+        </view>
+      </view>
+      <view class='loginOut'>
+        <button class='loginOutButton' open-type="getUserInfo" bindgetuserinfo="loginHandler">{{buttonText}}</button>
+      </view>
+    </view>
+  </view>
+ </view>
+ <view class='driverContainer'> 
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 750rpx; height: 700rpx;position:absolute">
+  </map>
+  <view class="driverServer" style='display:{{orderOrMore?"block":"none"}}'>
+    <view class='driverTitle'>
+      <image src="../../../images/icon/icon-25.png"></image> 
+      <text>预约时间</text>
+    </view>
+    <view class='startAddress'>
+      <icon></icon>
+      <input placeholder='所在位置（自动生成）'  value="{{startAddress}}" data-skip="../searchAddress/searchAddress?addressType=startAddress" bindfocus='intoPageHandler'></input>
+    </view>
+    <view class='goAddress'>
+      <view class='iconAndGoAddress'>
+        <icon></icon>
+        <input placeholder='请输入目的地' data-skip="../searchAddress/searchAddress?addressType=endAddress" bindfocus='intoPageHandler' value="{{endAddress}}"></input>
+      </view>
+      <view class='serverImage'>
+        <image src='../../../images/icon/icon-19.png'></image>
+      </view>
+    </view>
+    <view class='helpAndMoreDriver'>
+      <view class='help' bindtap='callPhoneHandler'>
+        <image src="../../../images/icon/icon-24.png"></image>
+        <text>帮朋友叫车</text>
+      </view>
+      <view class='moreDriver' bindtap='getMoreDriverHandler'>
+        <view class='more'>
+          <image src="../../../images/icon/icon-24.png"></image>
+          <text>需要多位司机</text></view>
+        </view>
+    </view>
+    <view class='scjSubmitButton'>
+      <button class='scjSubmit' bindtap='callServerHandler'>一键呼叫</button>
+    </view>
+  </view>
+  <view class='privenceRelative' style='display:{{!orderOrMore?"block":"none"}}'>
+     <view class='title'>
+      <view bindtap='getMoreDriverHandler'>取消</view>
+      <view>请选择司机数量</view>
+      <view bindtap='getDriverCountHandler'>确定</view>
+     </view>
+     <view class='context'>
+      <picker-view indicator-class="driverChecked" style="width: 100%; height: 400rpx;" bindchange="bindChange">
+            <picker-view-column>
+            <view wx:for="{{drivers}}" wx:key='this' class='droverCountText'>{{item.title}}</view>
+            </picker-view-column>
+        </picker-view>
+     </view>
+  </view>
+</view> 
+</view>

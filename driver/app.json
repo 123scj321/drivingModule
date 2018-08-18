@@ -1,0 +1,37 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+
+    "pages/driver/personalInformation/personalInformation",
+    "pages/driver/wallet/wallet",
+    "pages/driver/personalCenter/personalCenter",
+    "pages/driver/knowleage/knowleage",
+    "pages/driver/evaluate/evaluate",
+    "pages/driver/activity/activity",
+    "pages/driver/addIdCardPhoto/addIdCardPhoto",
+    "pages/driver/activityInformation/activityInformation",
+
+    "pages/order/order/order",
+    "pages/order/orderDetail/orderDetail",
+    "pages/order/orderReward/orderReward",
+    "pages/order/orderedStatus/orderedStatus",
+    "pages/order/getOrder/getOrder",
+    "pages/order/accidentOrder/accidentOrder",
+    "pages/order/accidentDetail/accidentDetail",
+    "pages/order/bill/bill",
+    "pages/order/appointmentOrder/appointmentOrder",
+    "pages/order/orderGoing/orderGoing",
+    "pages/order/paidDetail/paidDetail",
+
+    "pages/setup/setup",
+    "pages/logs/logs",
+    "pages/example/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"white"
+  }
+}

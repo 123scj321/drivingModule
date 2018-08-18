@@ -1,0 +1,72 @@
+/* pages/map/my/my.wxss */
+/*myLeft  */
+.myLeft{
+  width:620rpx;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+.avatarAndLogin{
+  width:100%;
+  margin-top:130rpx;
+  margin-bottom: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color:#333;
+}
+.avatarAndLogin image{
+  width:180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  margin:0 auto;
+}
+.avatarAndLogin text{
+  margin-top:20rpx;
+}
+.myList{
+  width:100%;
+  padding-left:60rpx;
+}
+.myItem{
+  border-bottom: 2rpx solid #d2d2d2;
+  height:120rpx;
+  line-height: 120rpx;
+  font-size: 32rpx;
+  color:#333;
+}
+.myItem:last-child{
+  border:none;
+}
+.myItem view{
+  color:#333;
+  font-size:32rpx;
+}
+.myItem view{
+  display: inline-block;
+  margin-left:20rpx;
+}
+.showCount{
+  width:45rpx;
+  height: 45rpx;
+  background: #de2a2a;
+  color:#fff;
+  font-size:24rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45rpx;
+   margin-left: 300rpx; 
+}
+.loginOut{
+  width:100%;
+  position: fixed;
+  bottom:0rpx;
+  height: 120rpx;
+  background: #fff;
+}
+.loginOut button{
+  margin-left:20rpx;
+  width: 570rpx;
+  height: 90rpx;
+  font-size:32rpx;
+  color:#666;
+}

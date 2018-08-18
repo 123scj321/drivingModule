@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.button{
+  width:100%;
+  background: #fff;
+  border-top:2rpx solid #ddd;
+  text-align: center;
+  height: 130rpx;
+  position: fixed;
+  bottom:0rpx;
+}
+.button button{
+  width:700rpx;
+  margin:20rpx auto;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: linear-gradient(to bottom,#02adfa, #028dc9);
+  color:#fff;
+}

@@ -1,0 +1,107 @@
+<!--pages/driver/wallet/wallet.wxml-->
+<view class='walletContainer'>
+  <!-- overAndIncome -->
+  <view class='overAndIncome'>
+    <view class='overAndIncomeBg'>
+      <image src="../../../images/icon/icon-18.png"></image>
+    </view>
+    <view class='overAndIncomeContainer'>
+      <view class='over'>
+        <view>余额（元）</view>
+        <view>0.00</view>
+      </view>
+      <view class='getMoneyAndTodayIncome'>
+        <view class='getMoney'> 
+          <view>可提取余额</view>
+          <view>￥0.00</view>
+        </view>
+        <view class='todayIncome'> 
+          <view>今日收入</view>
+          <view>￥300.00</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--nowAndRecordContainer  -->
+   <view class='nowAndRecordContainer'>
+    <view class='nowGetMoney'>
+      <view class='nowGetMoneyImage'>
+        <image src="../../../images/icon/icon-19.png"></image>
+      </view>
+      <view class='nowGetMoneyText'>
+        <text>立即提现</text>
+      </view>
+    </view>
+    <view class='getMoneyRecord'>
+      <view class='getMoneyRecordImage'>
+        <image src="../../../images/icon//icon-24.png"></image>
+      </view>
+      <view class='getMoneyRecordText'>
+        <text>提现记录</text>
+      </view>
+    </view>
+  </view> 
+  <!--todayOrderRecordContainer  -->
+   <view class='todayOrderRecordContainer'>
+    <view class='todayOrderRecordTitle'>
+      <text>今日订单统计</text>
+    </view>
+    <view class='todayOrderRecordList'>
+      <view class='todayOrderRecordItem'>
+        <view class='todayOrderRecordTime'>
+          <text>2018/08/08</text>
+        </view>
+        <view class='todayOrderRecordText'>
+          <text>帮我买</text>
+        </view>
+        <view class='todayOrderRecordMoney'>
+          <text>+30.50</text>
+          <view></view>
+          <text>支付收款</text>
+        </view>
+      </view>
+      <view class='borderTop'></view>
+      <view class='todayOrderRecordItem'>
+        <view class='todayOrderRecordTime'>
+          <text>2018/08/08</text>
+        </view>
+        <view class='todayOrderRecordText'>
+          <text>帮我买</text>
+        </view>
+        <view class='todayOrderRecordMoney'>
+          <text>+30.50</text>
+          <view></view>
+          <text>支付收款</text>
+        </view>
+      </view>
+      <view class='borderTop'></view>
+       <view class='todayOrderRecordItem'>
+        <view class='todayOrderRecordTime'>
+          <text>2018/08/08</text>
+        </view>
+        <view class='todayOrderRecordText'>
+          <text>帮我买</text>
+        </view>
+        <view class='todayOrderRecordMoney'>
+          <text>+30.50</text>
+          <view></view>
+          <text>支付收款</text>
+        </view>
+      </view>
+      <view class='borderTop'></view>
+       <view class='todayOrderRecordItem'>
+        <view class='todayOrderRecordTime'>
+          <text>2018/08/08</text>
+        </view>
+        <view class='todayOrderRecordText'>
+          <text>帮我买</text>
+        </view>
+        <view class='todayOrderRecordMoney yellowText'>
+          <text>+30.50</text>
+          <view></view>
+          <text>支付收款</text>
+        </view>
+      </view>
+    </view>
+  </view> 
+</view>

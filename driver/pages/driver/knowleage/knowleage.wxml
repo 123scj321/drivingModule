@@ -1,0 +1,21 @@
+<!--pages/driver/knowleage/knowleage.wxml-->
+<!--knowleage container  -->
+ <view class='knowleageContainer'>
+  <view class='title'>
+    <icon></icon>
+    <text>常见问题</text>
+    <icon></icon>
+  </view>
+  <view class='questionAndAnswear' wx:for="{{knowledge}}" wx:index="index" wx:key="{{knowledge}}" wx:item="{{item}}" bindtap='checkHandler' data-index="{{index}}">
+    <view class='question'>
+      <text>{{item.title}}</text>
+      <image src="../../../images/icon/‭icon-06.png" class='more' hidden='{{knowledgeCheck!==index}}'></image>
+      <image src="../../../images/icon/‭icon-05.png" class='show' hidden='{{knowledgeCheck===index}}'></image>
+    </view>
+    <view class='answear' hidden='{{knowledgeCheck!==index}}'>
+      <text>
+      {{item.context}}
+      </text>
+    </view>
+  </view>
+ </view>

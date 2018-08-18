@@ -1,0 +1,52 @@
+<!--pages/map/orderAndDriverGoing/orderAndDriverGoing.wxml-->
+<view class='driverServerContainer'>
+ <view class='myContainer' hidden='{{myShow}}'>
+  <view class='myContainer'>
+    <view class='myLeft'>
+      <view class='avatarAndLogin'>
+        <image  src="{{avatar}}"></image>
+        <view>{{username}}</view>
+      </view>
+      <view class='myList'>
+        <view class='myItem ' data-skip="../../order/allOrder/allOrder" bindtap='intoPageHandler'>
+          <view class='iconfont icon-wenben'></view>
+          <view>全部订单</view>
+        </view>
+        <view class='myItem' data-skip="../orderGoing/orderGoing" bindtap='orderGoingHandler'>
+          <view class='iconfont icon-biao'></view>
+          <view>进行中</view>
+          <view class='showCount' style='display:{{orderGoing?"inline-block":"none"}}'>1</view>
+        </view>
+        <view class='myItem' data-skip="../../coupon/coupon" bindtap='intoPageHandler'>
+          <view class='iconfont icon-youhuiquan'></view>
+          <view>优惠券</view>
+        </view>
+        <view class='myItem' bindtap='callPhoneHandler'>
+          <view class='iconfont icon-weibiaoti'></view>
+          <view>联系客服</view>
+        </view>
+      </view>
+      <view class='loginOut'>
+        <button class='loginOutButton' open-type="getUserInfo" bindgetuserinfo="loginHandler">{{buttonText}}</button>
+      </view>
+    </view>
+  </view>
+ </view>
+<view class='driverContainer'> 
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 750rpx; height: 850rpx;"></map>
+  <view class='orderDetailContainer'>
+    <view class='dirverTitle'>
+      <text>请稍后，正在给您安排附近的代驾司机</text>
+    </view>
+    <view class='driverDetail'>
+      <view class='waitTime'>等待时间</view>
+      <view class='time'>{{order_going_m<10?"0"+order_going_m:order_going_m}}:{{order_going_s<10?"0"+order_going_s:order_going_s}}</view>
+      <view class='win'>提示：两分钟以内未接单可无责取消订单 </view>
+    </view>
+    <view class='driverDetailList'>
+      <button bindtap='deleteOrderHandler'>取消订单</button>
+    </view>
+  </view>
+</view> 
+</view> 
+
